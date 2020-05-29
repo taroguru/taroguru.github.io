@@ -1,5 +1,502 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[켜져있어서 돌아가는 서비스 수습하기]]></title><description><![CDATA[켜져있어서 돌아가는 사이트를 수습했던 경험을 나누는 블로그]]></description><link>https://taroguru.github.io</link><image><url>https://taroguru.github.io/logos/logo-512.png</url><title>켜져있어서 돌아가는 서비스 수습하기</title><link>https://taroguru.github.io</link></image><generator>GatsbyJS Material Starter</generator><lastBuildDate>Sun, 10 May 2020 07:31:57 GMT</lastBuildDate><atom:link href="https://taroguru.github.io/rss.xml" rel="self" type="application/rss+xml"/><copyright><![CDATA[Copyright © 2020. taroguru]]></copyright><item><title><![CDATA[MapReduce]]></title><description><![CDATA[맵리듀스? 맵리듀스? 무엇? 
-데이터에서 원하는 결과를 뽑아내기 위한 방법으로 원본의 데이터를 맵(map)을 만들어서 원하는 데이터로 줄여주는(reduce…]]></description><link>https://taroguru.github.io/map-reduce</link><guid isPermaLink="false">https://taroguru.github.io/map-reduce</guid><category><![CDATA[mapreduce]]></category><pubDate>Sun, 10 May 2020 00:00:00 GMT</pubDate><content:encoded>&lt;h1 id=&quot;맵리듀스&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EB%A7%B5%EB%A6%AC%EB%93%80%EC%8A%A4&quot; aria-label=&quot;맵리듀스 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;맵리듀스?&lt;/h1&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[켜져있어서 돌아가는 서비스 수습하기]]></title><description><![CDATA[켜져있어서 돌아가는 사이트를 수습했던 경험을 나누는 블로그]]></description><link>https://taroguru.github.io</link><image><url>https://taroguru.github.io/logos/logo-512.png</url><title>켜져있어서 돌아가는 서비스 수습하기</title><link>https://taroguru.github.io</link></image><generator>GatsbyJS Material Starter</generator><lastBuildDate>Fri, 29 May 2020 08:10:49 GMT</lastBuildDate><atom:link href="https://taroguru.github.io/rss.xml" rel="self" type="application/rss+xml"/><copyright><![CDATA[Copyright © 2020. taroguru]]></copyright><item><title><![CDATA[MSBuild와 NuGet]]></title><description><![CDATA[왜 MSBuild? 왜 NuGet? 마이크로소프트웨어 관련 개발은 비주얼 스튜디오를 사용하여 개발을 진행하게 된다. IDE 위에서 참조 라이브러리를 손으로 얹거나 NuGet Package Manager를 통해 패키지를 관리하고, Debug…]]></description><link>https://taroguru.github.io/ms-build와-nu-get</link><guid isPermaLink="false">https://taroguru.github.io/ms-build와-nu-get</guid><category><![CDATA[MSBuild]]></category><category><![CDATA[NuGet]]></category><pubDate>Mon, 25 May 2020 00:00:00 GMT</pubDate><content:encoded>&lt;h1 id=&quot;왜-msbuild-왜-nuget&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EC%99%9C-msbuild-%EC%99%9C-nuget&quot; aria-label=&quot;왜 msbuild 왜 nuget permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;왜 MSBuild? 왜 NuGet?&lt;/h1&gt;
+&lt;p&gt;마이크로소프트웨어 관련 개발은 비주얼 스튜디오를 사용하여 개발을 진행하게 된다. IDE 위에서 참조 라이브러리를 손으로 얹거나 NuGet Package Manager를 통해 패키지를 관리하고, Debug, Release로 타겟을 정해여 빌드 후 Publish 메뉴로 배포까지 할 수 있다.
+로컬 머신에서 빌드 후 테스트 서버와 운영 서버에 배포할 수도 있겠지만, 단계가 늘어감에 따라 소스만 가지고 빌드를 따로 진행해야 할 필요가 있 &lt;/p&gt;
+&lt;p&gt;CI/CDㄹ하지만 CI/CD환경을 구성하려면 빌드 스크립트를 짜올려야 한다. IDE가 하는 일을 내가 &lt;/p&gt;
+&lt;h2 id=&quot;nuget&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#nuget&quot; aria-label=&quot;nuget permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Nuget&lt;/h2&gt;
+&lt;h3 id=&quot;기본-명령&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EA%B8%B0%EB%B3%B8-%EB%AA%85%EB%A0%B9&quot; aria-label=&quot;기본 명령 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;기본 명령&lt;/h3&gt;
+&lt;p&gt;기본 명령은 다음과 같다.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;nuget.exe restore project.sln&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;restore는 정의된 프로젝트의 &lt;/p&gt;
+&lt;h2 id=&quot;msbuild&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#msbuild&quot; aria-label=&quot;msbuild permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;MSBuild&lt;/h2&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;msbuild.exe project.csproj&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2 id=&quot;robocopy&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#robocopy&quot; aria-label=&quot;robocopy permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;robocopy&lt;/h2&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;robocopy&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;robocopy를 돌리면 정상적으로 카피가 끝나면 exit code로 1을 던진다. gitlab은 CI/CD 동작 판단에 unix exit code를 사용하는데, 1은 general error이다. 즉, 카피가 정상적으로 이루어지면 error가 뜨면서 build failed가 올라온다.
+robocopy의 exit code중 0(0x00), 1(0x01), 2(0x10), 4(0x100)는 카피가 정상종료되었다고 볼 수 있으므로 8미만(0x111)의 값이 오면 0으로 강제 설정하여 빌드를 성공으로 만들 수 있다.
+이를 배포 스크립트에 반영해보면,&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;(robocopy /mir source dest /w:1 /r:1); if( $lastexitcode -lt 8 ) { $lastexitcode = 0 }&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;위와 같이 변경하고 실행해보면 정상적으로 build가 pass됨을 알 수 있다.&lt;/p&gt;
+&lt;h2 id=&quot;단일-솔루션-복수-프로젝트&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EB%8B%A8%EC%9D%BC-%EC%86%94%EB%A3%A8%EC%85%98-%EB%B3%B5%EC%88%98-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8&quot; aria-label=&quot;단일 솔루션 복수 프로젝트 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;단일 솔루션, 복수 프로젝트&lt;/h2&gt;
+&lt;p&gt;nuget package 위치가 꼬인다.
+같이 참조가 걸려있더라도 쓰는게 좋은 것 같기도하고.&lt;/p&gt;
+&lt;h1 id=&quot;참고&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EC%B0%B8%EA%B3%A0&quot; aria-label=&quot;참고 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;참고&lt;/h1&gt;
+&lt;ol&gt;
+&lt;li&gt;[펌]실전! 지속적인 통합 10편: MSBuild 따라하기 : &lt;a href=&quot;https://megustaria.tistory.com/3&quot;&gt;https://megustaria.tistory.com/3&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;NuGet : &lt;a href=&quot;https://docs.microsoft.com/ko-kr/nuget/what-is-nuget&quot;&gt;https://docs.microsoft.com/ko-kr/nuget/what-is-nuget&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Stop gitlab runner to not remove a directory : &lt;a href=&quot;https://stackoverflow.com/questions/42948062/stop-gitlab-runner-to-not-remove-a-directory&quot;&gt;https://stackoverflow.com/questions/42948062/stop-gitlab-runner-to-not-remove-a-directory&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Specify project file of a solution using msbuild : &lt;a href=&quot;https://stackoverflow.com/questions/13915636/specify-project-file-of-a-solution-using-msbuild&quot;&gt;https://stackoverflow.com/questions/13915636/specify-project-file-of-a-solution-using-msbuild&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Robocopy exit alwsy with status code 1 and hence failing the job even if with all success : &lt;a href=&quot;https://gitlab.com/gitlab-org/gitlab/-/issues/31956&quot;&gt;https://gitlab.com/gitlab-org/gitlab/-/issues/31956&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://wiki.kldp.org/HOWTO/html/Adv-Bash-Scr-HOWTO/exitcodes.html&quot;&gt;https://wiki.kldp.org/HOWTO/html/Adv-Bash-Scr-HOWTO/exitcodes.html&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;How to stop robocopy from exiting the build? : &lt;a href=&quot;https://stackoverflow.com/questions/44504795/how-to-stop-robocopy-from-exiting-the-build&quot;&gt;https://stackoverflow.com/questions/44504795/how-to-stop-robocopy-from-exiting-the-build&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;robocopy exit codes : &lt;a href=&quot;https://ss64.com/nt/robocopy-exit.html&quot;&gt;https://ss64.com/nt/robocopy-exit.html&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;</content:encoded><author>mailto:taroguru@gmail.com</author></item><item><title><![CDATA[Tomcat 업데이트(9.0.16->9.0.35)]]></title><description><![CDATA[Tomcat 업데이트 열린 웹은 항상 공격받는데  작업내용 6.7을 마지막으로  vCenter Server Appliance 리눅스 위에서 돌아감 - 전자는 애플리케이션 셋이고 후자는 OS+애플리케이션 셋이라는 차이점이 있으며,  참조 Apache…]]></description><link>https://taroguru.github.io/tomcat-업데이트-9-0-16-9-0-35</link><guid isPermaLink="false">https://taroguru.github.io/tomcat-업데이트-9-0-16-9-0-35</guid><category><![CDATA[ApacheTomcat]]></category><pubDate>Mon, 25 May 2020 00:00:00 GMT</pubDate><content:encoded>&lt;h1 id=&quot;tomcat-업데이트&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#tomcat-%EC%97%85%EB%8D%B0%EC%9D%B4%ED%8A%B8&quot; aria-label=&quot;tomcat 업데이트 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Tomcat 업데이트&lt;/h1&gt;
+&lt;p&gt;열린 웹은 항상 공격받는데 &lt;/p&gt;
+&lt;h1 id=&quot;작업내용&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EC%9E%91%EC%97%85%EB%82%B4%EC%9A%A9&quot; aria-label=&quot;작업내용 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;작업내용&lt;/h1&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;sh&quot;&gt;&lt;pre class=&quot;language-sh&quot;&gt;&lt;code class=&quot;language-sh&quot;&gt;$ wget tomcat
+$ tar -xvf tomcat
+# 설정파일 옮기기
+# 링크 수정
+#&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;ul&gt;
+&lt;li&gt;6.7을 마지막으로 &lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;vcenter-server-appliance&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#vcenter-server-appliance&quot; aria-label=&quot;vcenter server appliance permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;vCenter Server Appliance&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;리눅스 위에서 돌아감&lt;/li&gt;
+&lt;li&gt;-&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;전자는 애플리케이션 셋이고 후자는 OS+애플리케이션 셋이라는 차이점이 있으며, &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&quot;참조&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EC%B0%B8%EC%A1%B0&quot; aria-label=&quot;참조 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;참조&lt;/h1&gt;
+&lt;ol&gt;
+&lt;li&gt;Apache Tomcat AJP 취약점 보안 조치 권고(2차) : &lt;a href=&quot;https://www.krcert.or.kr/data/secNoticeView.do?bulletin_writing_sequence=35292&quot;&gt;https://www.krcert.or.kr/data/secNoticeView.do?bulletin_writing_sequence=35292&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;</content:encoded><author>mailto:taroguru@gmail.com</author></item><item><title><![CDATA[vCenter Server for Windows to vCenter Server Appliance]]></title><description><![CDATA[vCenter Server for Windows vs vCenter Server Appliance? VMware의 vCenter는 두가지 버전이 있다. vCenter Server for Windows…]]></description><link>https://taroguru.github.io/v-center-server-for-windows-to-v-center-server-appliance</link><guid isPermaLink="false">https://taroguru.github.io/v-center-server-for-windows-to-v-center-server-appliance</guid><category><![CDATA[vcenter]]></category><category><![CDATA[vcsa]]></category><pubDate>Fri, 22 May 2020 00:00:00 GMT</pubDate><content:encoded>&lt;h1 id=&quot;vcenter-server-for-windows-vs-vcenter-server-appliance&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#vcenter-server-for-windows-vs-vcenter-server-appliance&quot; aria-label=&quot;vcenter server for windows vs vcenter server appliance permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;vCenter Server for Windows vs vCenter Server Appliance?&lt;/h1&gt;
+&lt;p&gt;VMware의 vCenter는 두가지 버전이 있다. vCenter Server for Windows는 윈도우 위에서 애플리케이션으로 돌릴 수 있는 시스템이며, vCenter Server Appliance는 vCenter기반의 vCenter 운용을 위한 시스템이다. 간략한 특징을 정리해보면&lt;/p&gt;
+&lt;h3 id=&quot;vcenter-server-for-windows&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#vcenter-server-for-windows&quot; aria-label=&quot;vcenter server for windows permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;vCenter Server for Windows&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;6.7을 마지막으로 flffl&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;vcenter-server-appliance&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#vcenter-server-appliance&quot; aria-label=&quot;vcenter server appliance permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;vCenter Server Appliance&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;리눅스 위에서 돌아감&lt;/li&gt;
+&lt;li&gt;-&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;전자는 애플리케이션 셋이고 후자는 OS+애플리케이션 셋이라는 차이점이 있으며, &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&quot;참조&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EC%B0%B8%EC%A1%B0&quot; aria-label=&quot;참조 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;참조&lt;/h1&gt;
+&lt;ol&gt;
+&lt;li&gt;Migrating vCenter Server for Windows to vCenter Server Appliance : &lt;a href=&quot;https://docs.vmware.com/en/VMware-vSphere/6.5/com.vmware.vsphere.upgrade.doc/GUID-9A117817-B78D-4BBE-A957-982C734F7C5F.html&quot;&gt;https://docs.vmware.com/en/VMware-vSphere/6.5/com.vmware.vsphere.upgrade.doc/GUID-9A117817-B78D-4BBE-A957-982C734F7C5F.html&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Farewell, vCenter Server for Windows : &lt;a href=&quot;https://blogs.vmware.com/vsphere/2017/08/farewell-vcenter-server-windows.html&quot;&gt;https://blogs.vmware.com/vsphere/2017/08/farewell-vcenter-server-windows.html&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;a href=&quot;https://aerocode.net&quot;&gt;https://aerocode.net&lt;/a&gt;&lt;/p&gt;</content:encoded><author>mailto:taroguru@gmail.com</author></item><item><title><![CDATA[CentOS 7 원격 데스크탑 사용을 위한 VNC Server 설치]]></title><description><![CDATA[VNC 웹 서버나 미들웨어만 돌릴거라면 콘솔로 붙어도 충분하지만, 데스크탑 용으로 사용하려면 GUI 프로그램을 쓰고 싶을 때가 있다. 윈도우에서는 원격 데스크톱 프로토콜(RD, Remote Destktop Protocol, Port:338…]]></description><link>https://taroguru.github.io/cent-os-7-원격-데스크탑-사용을-위한-vnc-server-설치</link><guid isPermaLink="false">https://taroguru.github.io/cent-os-7-원격-데스크탑-사용을-위한-vnc-server-설치</guid><category><![CDATA[VNC]]></category><pubDate>Thu, 21 May 2020 00:00:00 GMT</pubDate><content:encoded>&lt;h1 id=&quot;vnc&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#vnc&quot; aria-label=&quot;vnc permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;VNC&lt;/h1&gt;
+&lt;p&gt;웹 서버나 미들웨어만 돌릴거라면 콘솔로 붙어도 충분하지만, 데스크탑 용으로 사용하려면 GUI 프로그램을 쓰고 싶을 때가 있다. 윈도우에서는 원격 데스크톱 프로토콜(RD, Remote Destktop Protocol, Port:3389)를 사용하면 되지만, 리눅스는 배포 버전에 따라 기본적으로 제공되는 원격 데스크톱 프로그램이 없는 경우도 있다. 어쨋든 산업 표준에 가깝게 사용하고 있는 것이 VNC(Virtual Network Computing)인데 큰 구조는 VNC Server와 Client 사이를 RFB 프로토콜로 통신하며 제어하는 구조이다.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;VNC Server : Remote Desktop Service에 대응&lt;/li&gt;
+&lt;li&gt;VNC Client(Viewer) : 원격 데스크톱 연결 프로그램(mstsc.exe)에 대응&lt;/li&gt;
+&lt;li&gt;RFB Protocol(Remote Frame Buffer)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;RFB의 규격은 RFC 6143으로 공개되있고 윈도우용 서버 구현체도 있으므로 윈도우에 VNC Server를 설치하면 VNC로 컨트롤 가능하다. RDP가 있으므로 굳이 설치할 필요는 없지만 낮은 그레이드의 윈도우(Home...)는 원격 데스크톱 서비스를 제공하지 않으므로 VNC를 설치해서 원격 제어를 해도 된다.&lt;/p&gt;
+&lt;h1 id=&quot;사전-요구사항&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EC%82%AC%EC%A0%84-%EC%9A%94%EA%B5%AC%EC%82%AC%ED%95%AD&quot; aria-label=&quot;사전 요구사항 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;사전 요구사항&lt;/h1&gt;
+&lt;p&gt;원격 데스크톱을 공유하고 제어하고자 하므로 gnome이 설치되어 있어야 한다.&lt;/p&gt;
+&lt;h1 id=&quot;설치&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EC%84%A4%EC%B9%98&quot; aria-label=&quot;설치 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;설치&lt;/h1&gt;
+&lt;p&gt;아래와 같이 설정한다.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;sh&quot;&gt;&lt;pre class=&quot;language-sh&quot;&gt;&lt;code class=&quot;language-sh&quot;&gt;$ yum install vnc-server&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h1 id=&quot;잠시-중단망했다&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EC%9E%A0%EC%8B%9C-%EC%A4%91%EB%8B%A8%EB%A7%9D%ED%96%88%EB%8B%A4&quot; aria-label=&quot;잠시 중단망했다 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;(잠시 중단)망했다.&lt;/h1&gt;
+&lt;p&gt;리눅스 위에 돌릴께 아니라 전용 어플라이언스 ISO로 설치해야 되는구나.
+다음에 리눅스용 원격 호스트를 쓸 일이 있을 때 다시 이 글을 이어가도록 하자...
+빠이빠이...&lt;/p&gt;
+&lt;h1 id=&quot;참조&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EC%B0%B8%EC%A1%B0&quot; aria-label=&quot;참조 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;참조&lt;/h1&gt;
+&lt;ol&gt;
+&lt;li&gt;VNC : &lt;a href=&quot;https://ko.wikipedia.org/wiki/VNC&quot;&gt;https://ko.wikipedia.org/wiki/VNC&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;RFB Protocol : &lt;a href=&quot;https://en.wikipedia.org/wiki/RFB_protocol&quot;&gt;https://en.wikipedia.org/wiki/RFB_protocol&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;RFB RFC : &lt;a href=&quot;https://tools.ietf.org/html/rfc6143&quot;&gt;https://tools.ietf.org/html/rfc6143&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;</content:encoded><author>mailto:taroguru@gmail.com</author></item><item><title><![CDATA[글 정리]]></title><description><![CDATA[구성 자유글 켜져있어서 돌아가는 서비스 운영하기 Development and Deployment Pipeline 구현(Development, Commit ...) .NetCore Linux에서 Nginx + ASP.NET Core…]]></description><link>https://taroguru.github.io/글-정리</link><guid isPermaLink="false">https://taroguru.github.io/글-정리</guid><category><![CDATA[introduction]]></category><category><![CDATA[category]]></category><category><![CDATA[tag]]></category><pubDate>Tue, 19 May 2020 00:00:00 GMT</pubDate><content:encoded>&lt;h1 id=&quot;구성&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EA%B5%AC%EC%84%B1&quot; aria-label=&quot;구성 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;구성&lt;/h1&gt;
+&lt;h2 id=&quot;자유글&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EC%9E%90%EC%9C%A0%EA%B8%80&quot; aria-label=&quot;자유글 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;자유글&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;a href=&quot;/5bdee4aa20a37285f9ad4ee8a127f4ae/20200504-introduction.md&quot;&gt;켜져있어서 돌아가는 서비스 운영하기&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h1 id=&quot;development-and-deployment-pipeline&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#development-and-deployment-pipeline&quot; aria-label=&quot;development and deployment pipeline permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Development and Deployment Pipeline&lt;/h1&gt;
+&lt;!-- ## 계획(Plan, Requirement) --&gt;
+&lt;!-- ## 분석(Analysis) --&gt;
+&lt;!-- ## 설계(Design) --&gt;
+&lt;h2 id=&quot;구현development-commit-&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EA%B5%AC%ED%98%84development-commit-&quot; aria-label=&quot;구현development commit  permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;구현(Development, Commit ...)&lt;/h2&gt;
+&lt;h3 id=&quot;netcore&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#netcore&quot; aria-label=&quot;netcore permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;.NetCore&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;a href=&quot;/665e6b6d294f59b24fdde6db2ebf0a90/20200515-nginx_dotnetcore.md&quot;&gt;Linux에서 Nginx + ASP.NET Core로 웹서비스 돌리기&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;!-- ## 빌드와 테스트(Build, Test, Integration) --&gt;
+&lt;h2 id=&quot;배포&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EB%B0%B0%ED%8F%AC&quot; aria-label=&quot;배포 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;배포&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;a href=&quot;/031ba9327926faf499ff7b030e5cf35d/20200505-buildblog.md&quot;&gt;Gatsby로 블로그 만들어 Github Pages에 배포하기&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;!-- ## 모니터(Monitor, Operate) --&gt;
+&lt;h2 id=&quot;자동화&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EC%9E%90%EB%8F%99%ED%99%94&quot; aria-label=&quot;자동화 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;자동화&lt;/h2&gt;
+&lt;h3 id=&quot;ansible&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#ansible&quot; aria-label=&quot;ansible permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Ansible&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;a href=&quot;/06818f91bdda0e77f5e338c6c74be745/20200513-ansible.md&quot;&gt;Ansible로 로컬 스크립트를 원격 서버에서 실행&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h1 id=&quot;학습&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%ED%95%99%EC%8A%B5&quot; aria-label=&quot;학습 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;학습&lt;/h1&gt;
+&lt;h2 id=&quot;기법-방법&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EA%B8%B0%EB%B2%95-%EB%B0%A9%EB%B2%95&quot; aria-label=&quot;기법 방법 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;기법, 방법&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;a href=&quot;/5eb697e2ed1f30caeb4dd41c79aaa68a/20200510-mapreduce.md&quot;&gt;MapReduce 학습&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&quot;기타&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EA%B8%B0%ED%83%80&quot; aria-label=&quot;기타 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;기타&lt;/h2&gt;</content:encoded><author>mailto:taroguru@gmail.com</author></item><item><title><![CDATA[Linux에서 Nginx + ASP.NET Core로 웹서비스 돌리기]]></title><description><![CDATA[Linux에서 Nginx + ASP.NET Core…]]></description><link>https://taroguru.github.io/linux에서-nginx-asp-net-core로-웹서비스-돌리기</link><guid isPermaLink="false">https://taroguru.github.io/linux에서-nginx-asp-net-core로-웹서비스-돌리기</guid><category><![CDATA[DotNetCore]]></category><category><![CDATA[React]]></category><category><![CDATA[Nginx]]></category><pubDate>Fri, 15 May 2020 00:00:00 GMT</pubDate><content:encoded>&lt;h1 id=&quot;linux에서-nginx--aspnet-core로-웹서비스-돌리기&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#linux%EC%97%90%EC%84%9C-nginx--aspnet-core%EB%A1%9C-%EC%9B%B9%EC%84%9C%EB%B9%84%EC%8A%A4-%EB%8F%8C%EB%A6%AC%EA%B8%B0&quot; aria-label=&quot;linux에서 nginx  aspnet core로 웹서비스 돌리기 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Linux에서 Nginx + ASP.NET Core로 웹서비스 돌리기&lt;/h1&gt;
+&lt;p&gt;켜져있어서 돌아가는 서비스를 돌리다보면 새로운 시스템을 도입할 일도 있다. 신규 시스템을 도입은 두렵고 행복하다. 지금까지 터졌던 이슈들을 한번씩 다시 다 잡아야된다는 의미일수도 있지만, 우리가 겪었던 문제를 동일하게 겪은 시장이 그 문제를 해결하고자 출시한 많은 시스템들 위에서 새로 시스템을 쌓아가는 것은 참 가슴 뛰는 일이다.
+시작할 때 잘 잡아두면 완전히 자동화된 운영/배포 환경을 가지고 다양한 장애에서도 꺼지지 않는 시스템을 운영할 수 있을 것이라는 희망, 개발자와 운영자를 위해 세계의 개발자들이 만들어 둔 다양한 툴 중에 프로젝트에 필요한 도구만 쏙쏙 뽑아쓰는 재미, 조금의 아쉬운 점을 개선해서 PR을 날리고 머지가 되고, 대단한 아이디어와 코드 품질로 유명한 프로젝트 메인테이너가 되고, 이름이 높아져 고액 연봉 계약, 정치권 진출, 대통령 엔딩...!
+쓸때없는 소리는 잠시 내려두고 팀이 현재 가지고 있는 기술 스택은 MS계열(C#, ASP.NET, classic ASP, Razor, etc...)의 스택이므로 백엔드를 자연스럽게 .NET Core로 가기로 하였다. MS가 GitHub을 인수하고, 윈도우에서 WSL로 리눅스를 바로 돌리고, .NET Core를 Linux에서 빌드하고 서비스할 수 있는 세상. 바쁘다 바뻐 현대사회 알쏭달쏭 인터넷 세상.&lt;/p&gt;
+&lt;h1 id=&quot;사전-구성&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EC%82%AC%EC%A0%84-%EA%B5%AC%EC%84%B1&quot; aria-label=&quot;사전 구성 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;사전 구성&lt;/h1&gt;
+&lt;ol&gt;
+&lt;li&gt;리눅스 배포버전 : CentOS. RHEL의 가호 아래 CentOS를 쓰자.&lt;/li&gt;
+&lt;li&gt;.NET Core 버전 : .NET Core 3.1. 글을 작성하는 2020년 5월 15일 기준 LTS 버전.&lt;/li&gt;
+&lt;li&gt;Nginx : 리버스프록시로 Nginx를 도입한다.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h1 id=&quot;net-core&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#net-core&quot; aria-label=&quot;net core permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;.Net Core&lt;/h1&gt;
+&lt;h2 id=&quot;저장소-추가&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EC%A0%80%EC%9E%A5%EC%86%8C-%EC%B6%94%EA%B0%80&quot; aria-label=&quot;저장소 추가 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;저장소 추가&lt;/h2&gt;
+&lt;p&gt;우선 저장소를 추가한다.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;sudo rpm -Uvh https://packages.microsoft.com/config/centos/7/packages-microsoft-prod.rpm&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2 id=&quot;net-core-sdk-설치&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#net-core-sdk-%EC%84%A4%EC%B9%98&quot; aria-label=&quot;net core sdk 설치 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;.NET Core SDK 설치&lt;/h2&gt;
+&lt;p&gt;저장소가 추가되었으므로 SDK를 우선 설치한다. &lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;sh&quot;&gt;&lt;pre class=&quot;language-sh&quot;&gt;&lt;code class=&quot;language-sh&quot;&gt;sudo yum install dotnet-sdk-3.1&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2 id=&quot;aspnet-core-런타임-설치&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#aspnet-core-%EB%9F%B0%ED%83%80%EC%9E%84-%EC%84%A4%EC%B9%98&quot; aria-label=&quot;aspnet core 런타임 설치 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;ASP.NET Core 런타임 설치&lt;/h2&gt;
+&lt;p&gt;SDK가 설치되었으면 ASP.NET Core 런타임을 설치한다.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;sh&quot;&gt;&lt;pre class=&quot;language-sh&quot;&gt;&lt;code class=&quot;language-sh&quot;&gt;sudo yum install aspnetcore-runtime-3.1&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2 id=&quot;net-core-런타임-설치&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#net-core-%EB%9F%B0%ED%83%80%EC%9E%84-%EC%84%A4%EC%B9%98&quot; aria-label=&quot;net core 런타임 설치 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;.NET Core 런타임 설치&lt;/h2&gt;
+&lt;p&gt;.NET Core 런타임도 함께 설치한다. 차이점이 뭐지?&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;sh&quot;&gt;&lt;pre class=&quot;language-sh&quot;&gt;&lt;code class=&quot;language-sh&quot;&gt;sudo yum install aspnetcore-runtime-3.1&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2 id=&quot;방화벽-오픈&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EB%B0%A9%ED%99%94%EB%B2%BD-%EC%98%A4%ED%94%88&quot; aria-label=&quot;방화벽 오픈 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;방화벽 오픈&lt;/h2&gt;
+&lt;p&gt;테스트 프로그램에서는 웹서버(Nginx)와 애플리케이션 서버를 동일 서버에 설치한다. 각 프로그램에서 서비스를 위해 공개되어야 하는 포트를 개방해야 하는데 개방해야 하는 포트 목록은 다음과 같다.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Nginx : HTTP(80), HTTPS(443)&lt;/li&gt;
+&lt;li&gt;.NetCore(Kestrel) : 8080&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;웹 서비스를 담당할 Nginx에서는 HTTP, HTTPS 서비스를 처리하며, 애플리케이션 처리를 담당할 Kestrel에서는 유저가 정의한 포트를 오픈하도록 하자. Kestrel은 .NetCore에 탑재된 작업 웹서버이며, 여기서는 8080포트를 사용하도록 하자. 기본 포트는 5000이다.
+포트와 서버 구성에 따라 분리하여 룰은 변경하면 된다.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;sh&quot;&gt;&lt;pre class=&quot;language-sh&quot;&gt;&lt;code class=&quot;language-sh&quot;&gt;#/etc/firewalld/zones/public.xml에 오픈할 포트 추가
+vim /etc/firewalld/zones/public.xml
+...
+&amp;lt;port protocol=&amp;quot;tcp&amp;quot; port=&amp;quot;80&amp;quot;&amp;gt;
+&amp;lt;port protocol=&amp;quot;tcp&amp;quot; port=&amp;quot;443&amp;quot;&amp;gt;
+&amp;lt;port protocol=&amp;quot;tcp&amp;quot; port=&amp;quot;8080&amp;quot;&amp;gt;
+...
+
+#방화벽 룰 수정 후 reload
+firewall-cmd --reload&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h1 id=&quot;프로젝트-생성-및-실행&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%EC%83%9D%EC%84%B1-%EB%B0%8F-%EC%8B%A4%ED%96%89&quot; aria-label=&quot;프로젝트 생성 및 실행 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;프로젝트 생성 및 실행&lt;/h1&gt;
+&lt;h2 id=&quot;프로젝트-생성new테스트할-프로젝트가-있으면-넘어가기&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%EC%83%9D%EC%84%B1new%ED%85%8C%EC%8A%A4%ED%8A%B8%ED%95%A0-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8%EA%B0%80-%EC%9E%88%EC%9C%BC%EB%A9%B4-%EB%84%98%EC%96%B4%EA%B0%80%EA%B8%B0&quot; aria-label=&quot;프로젝트 생성new테스트할 프로젝트가 있으면 넘어가기 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;프로젝트 생성(new)(테스트할 프로젝트가 있으면 넘어가기)&lt;/h2&gt;
+&lt;p&gt;기능 수행을 위한 테스트 프로젝트를 생성한다. .NetCore에서는 각 프로젝트의 템플릿을 생성하는 &lt;strong&gt;new&lt;/strong&gt;라는 명령을 가지고 있다. 여러 &lt;strong&gt;웹&lt;/strong&gt; 프로젝트 중 익숙한 템플릿을 사용하면 되며 이 글에서는 &lt;strong&gt;mvc&lt;/strong&gt;프로젝트를 선택하기로 한다.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;sh&quot;&gt;&lt;pre class=&quot;language-sh&quot;&gt;&lt;code class=&quot;language-sh&quot;&gt;dotnet new mvc&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;참고로 dotnet new를 입력하면 생성가능한 템플릿의 목록이 나온다.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/static/assets/20200515/dotnet-new.png&quot; alt=&quot;alt text&quot; title=&quot;dotnet new로 만들 수 있는 템플릿들&quot;&gt;&lt;/p&gt;
+&lt;h2 id=&quot;프로젝트-게시publish&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%EA%B2%8C%EC%8B%9Cpublish&quot; aria-label=&quot;프로젝트 게시publish permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;프로젝트 게시(publish)&lt;/h2&gt;
+&lt;p&gt;실제 프로젝트를 게시하기 위해서는 &lt;strong&gt;publish&lt;/strong&gt;라는 명령을 사용한다. 프로젝트의 게시를 위한 dll 빌드 및 정적 파일을 지정된 경로에 생성하는 명령이다. 릴리즈 게시는 다음과 같이 수행할 수 있다.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;sh&quot;&gt;&lt;pre class=&quot;language-sh&quot;&gt;&lt;code class=&quot;language-sh&quot;&gt;dotnet publish --configuration Release&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;주요 기본 옵션에 대한 코멘트를 추가해 보자면&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;debug/release : publish의 기본 build 옵션은 debug이다. release용으로 생성하려면 &lt;strong&gt;--configuration Release&lt;/strong&gt; 옵션을 추가하도록 하자.&lt;/li&gt;
+&lt;li&gt;build : 기본 옵션으로 프로젝트를 신규 빌드하는데, &lt;strong&gt;--no-build&lt;/strong&gt;옵션을 걸어 build하지 않고 게시파일만 생성할 수 있다.
+(일반적인 경우라면 프로덕트 서버에서 직접 빌드 및 게시를 진행할 일은 없겠지만...)
+&lt;img src=&quot;/static/assets/20200515/build_nobuild.png&quot; alt=&quot;alt text&quot; title=&quot;--no-build 옵션 설정에 따른 빌드 파일&quot;&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;프로젝트-실행run&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%EC%8B%A4%ED%96%89run&quot; aria-label=&quot;프로젝트 실행run permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;프로젝트 실행(run)&lt;/h2&gt;
+&lt;p&gt;dotnet run을 이용하여 게시된 앱을 실행하고, 웹 브라우저로 접속해보자.
+방화벽을 열어두었으므로 개발PC 밖에서도 잘 접속되야 된다.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;sh&quot;&gt;&lt;pre class=&quot;language-sh&quot;&gt;&lt;code class=&quot;language-sh&quot;&gt;dotnet run bin/Release/netcoreapp3.1/publish #dotnet run으로 경로를 입력하여 실행
+or
+bin/Release/netcoreapp3.1/publish/testapp #실행파일 바로 실행&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;img src=&quot;/static/assets/20200515/welcome.png&quot; alt=&quot;alt text&quot; title=&quot;Welcome&quot;&gt;&lt;/p&gt;
+&lt;p&gt;애플리케이션이 잘 동작하는 것을 확인하였으니 리버스 프록시를 설정하자.&lt;/p&gt;
+&lt;h1 id=&quot;nginx&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#nginx&quot; aria-label=&quot;nginx permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Nginx&lt;/h1&gt;
+&lt;h2 id=&quot;개요&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EA%B0%9C%EC%9A%94&quot; aria-label=&quot;개요 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;개요&lt;/h2&gt;
+&lt;p&gt;Kestrel은 API 서버 등 로직 서버로 충분한 기능을 제공하지만 웹서버만큼 다양한 기능을 제공하지 않는다(캐싱, 정적 컨텐츠 지원, 압축 등). 이를 위해 리버스 프록시(Reverse Proxy, 역방향 프록시)를 앞에 두고 필요한 요청만 Kestrel로 던지도록 구성하자.&lt;/p&gt;
+&lt;h2 id=&quot;설치&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EC%84%A4%EC%B9%98&quot; aria-label=&quot;설치 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;설치&lt;/h2&gt;
+&lt;p&gt;저장소를 추가하고 설치하면 된다. 물론 root권한이 필요하다.
+저장소 추가는 아래오 같이 진행한다.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;sh&quot;&gt;&lt;pre class=&quot;language-sh&quot;&gt;&lt;code class=&quot;language-sh&quot;&gt;$ vim /etc/yum.repos.d/nginx.repo
+[nginx-stable]
+name=nginx stable repo
+baseurl=http://nginx.org/packages/centos/$releasever/$basearch/
+gpgcheck=1
+enabled=1
+gpgkey=https://nginx.org/keys/nginx_signing.key
+module_hotfixes=true
+
+[nginx-mainline]
+name=nginx mainline repo
+baseurl=http://nginx.org/packages/mainline/centos/$releasever/$basearch/
+gpgcheck=1
+enabled=0
+gpgkey=https://nginx.org/keys/nginx_signing.key
+module_hotfixes=true&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;저장소 추가 후 메인 라인(nginx-mainline)을 기본 저장소로 잡고 설치를 진행한다.
+설치가 완료되면 service를 enable시켜서 부팅되면 켜지도록 만들어 둔다.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;sh&quot;&gt;&lt;pre class=&quot;language-sh&quot;&gt;&lt;code class=&quot;language-sh&quot;&gt;sudo yum-config-manager --enable nginx-mainline #저장소를 설정하고
+sudo yum install nginx                          #nginx 설치 후,
+sudo systemctl enable nginx.service             #서비스로 등록하고
+sudo systemctl start nginx.service              #실행한다.&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;실행 후 웹 사이트에 접속보면 기본 인덱스 페이지가 잘 출력된다.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;/static/asset/20200515/welcome_nginx.png&quot; title=&quot;Welcome to nginx!&quot;&gt;!alt text&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&quot;nginx-설정&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#nginx-%EC%84%A4%EC%A0%95&quot; aria-label=&quot;nginx 설정 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Nginx 설정&lt;/h2&gt;
+&lt;p&gt;Nginx를 웹서버로 사용하면서 역방향 프록시를 이용하려면 다음과 같은 설정을 하여야 한다.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;sh&quot;&gt;&lt;pre class=&quot;language-sh&quot;&gt;&lt;code class=&quot;language-sh&quot;&gt;$ vim /etc/nginx/conf.d/default.conf
+# 다음과 같이 수정하자.
+server {
+    listen        80;
+    server_name   localhost *.localhost;
+    location / {
+        proxy_pass         http://localhost:8080;
+        proxy_http_version 1.1;
+        proxy_set_header   Upgrade $http_upgrade;
+        proxy_set_header   Connection keep-alive;
+        proxy_set_header   Host $host;
+        proxy_cache_bypass $http_upgrade;
+        proxy_set_header   X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_set_header   X-Forwarded-Proto $scheme;
+    }
+}
+$ sudo systemctl restart nginx&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;X-Forwarded시리즈는 .NetCore관점에서 클라이언트의 진짜 요청 파악하기 위한 산업표준 헤더이다. 클라이언트가 웹으로 접속하면 리버스 프록시가 해당 요청을 웹 애플리케이션으로 던지게 되는데, 애플리케이션 서버에서 클라이언트 IP를 가져와보면 바로 직전의 노드인 리버스 프록시의 IP를 가져오게 된다. 이를 방지하기 위하여, 즉 진짜 클라이언트 아이피를 백단에서 확인하기 위하여 아이피를 &lt;strong&gt;X-Forwarded-For&lt;/strong&gt;에 넣어둔다. 리버스 프록시와 와스 사이 통신은 HTTPS 요청을 오프로딩을 해서 평문으로 던지게 되므로, 원래 프로토콜도 &lt;strong&gt;X-Forwarded-Proto&lt;/strong&gt;에 넣어둔다.&lt;/p&gt;
+&lt;p&gt;설정 후 HTTP로 접근해보면 nginx 웰컴페이지가 아니라 .netcore 웰컴페이지가 출력되는 것을 확인할 수 있다.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/static/assets/20200515/welcome.png&quot; alt=&quot;alt text&quot; title=&quot;Welcome&quot;&gt;&lt;/p&gt;
+&lt;h2 id=&quot;net-core에서-x-forwarded-헤더-사용&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#net-core%EC%97%90%EC%84%9C-x-forwarded-%ED%97%A4%EB%8D%94-%EC%82%AC%EC%9A%A9&quot; aria-label=&quot;net core에서 x forwarded 헤더 사용 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;.Net Core에서 X-Forwarded-헤더 사용&lt;/h2&gt;
+&lt;p&gt;http 헤더에 넣었다고 바로 값을 땡겨올 수 있는 것은 아니다. .Net Core에서는 이를 처리하기 위한 미들웨어를 제공하는데 Startup.cs(MVC 템플릿 기준)에 다음 코드를 추가하자. &lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;c#&quot;&gt;&lt;pre class=&quot;language-c#&quot;&gt;&lt;code class=&quot;language-c#&quot;&gt;using Microsoft.AspNetCore.HttpOverrides;   
+...
+
+public void Configure(IApplicationBuilder app, IHostingEnvironment env)
+{
+    app.UseForwardedHeaders(new ForwardedHeadersOptions{
+        ForwardedHeaders = ForwardedHeaders.XForwardedFor | ForwardedHeaders.XForwardedProto
+    });
+}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2 id=&quot;만일-안된다면&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EB%A7%8C%EC%9D%BC-%EC%95%88%EB%90%9C%EB%8B%A4%EB%A9%B4&quot; aria-label=&quot;만일 안된다면 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;만일 안된다면!&lt;/h2&gt;
+&lt;p&gt;뭔가 안된다면 selinux 관련 이슈일 확률이 높다. nginx 쪽 에러 로그를 우션 살펴보자.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;sh&quot;&gt;&lt;pre class=&quot;language-sh&quot;&gt;&lt;code class=&quot;language-sh&quot;&gt;$ vim /var/log/nginx/error.log&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Nginx 에러로그에 아래와 같이 권한이 없다는 로그가 확인될 수도 있다.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/static/assets/20200515/nginx_permissiondenied.png&quot; alt=&quot;alt text&quot; title=&quot;Nginx connect() permission denied&quot;&gt;&lt;/p&gt;
+&lt;p&gt;위 로그는 connect()에서 localhost:8080(.NetCore)으로 연결을 할 권한이 없다는 것이다. 리눅스는 보안 이슈로 웹 통신을 연결하지 못하도록 기본 세팅이 되어 있는데 해당 설정을 SELinux에서 담당한다. 다음과 같이 설정하여 httpd에서 네트워크 커낵트가 가능하도록 수정하자.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;sh&quot;&gt;&lt;pre class=&quot;language-sh&quot;&gt;&lt;code class=&quot;language-sh&quot;&gt;$ setsebool -P httpd_can_network_connect 1&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;위 명령을 수행 후 재접속을 해보면 정상 동작하는 것을 확인할 수 있다.&lt;/p&gt;
+&lt;h1 id=&quot;애플리케이션-서비스-관리&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EC%95%A0%ED%94%8C%EB%A6%AC%EC%BC%80%EC%9D%B4%EC%85%98-%EC%84%9C%EB%B9%84%EC%8A%A4-%EA%B4%80%EB%A6%AC&quot; aria-label=&quot;애플리케이션 서비스 관리 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;애플리케이션 서비스 관리&lt;/h1&gt;
+&lt;h2 id=&quot;서비스-추가&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EC%84%9C%EB%B9%84%EC%8A%A4-%EC%B6%94%EA%B0%80&quot; aria-label=&quot;서비스 추가 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;서비스 추가&lt;/h2&gt;
+&lt;p&gt;.NetCore로 개발된 프로그램을 서비스로 등록해두자. 등록해두지 않으면 시스템을 리셋할 때마다 손으로 다시 실행해야 한다.
+서비스 파일을 추가하고, enable 한 뒤 상태를 확인해보자&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;sh&quot;&gt;&lt;pre class=&quot;language-sh&quot;&gt;&lt;code class=&quot;language-sh&quot;&gt;$ sudo vim /etc/systemd/system/dotnet-first.service
+
+[Unit]
+Description=Dotnet First Example
+
+[Service]
+WorkingDirectory=/var/www/helloapp                          # 워킹 디렉토리 = .NetCore 앱 배포 폴더
+ExecStart=/usr/bin/dotnet /var/www/helloapp/testapp.dll     # 서비스 실행 명령. 
+Restart=always
+# Restart service after 10 seconds if the dotnet service crashes:
+RestartSec=10
+KillSignal=SIGINT
+SyslogIdentifier=hello-dotnet-first
+User=www-data                                               # 프로그램 수행 유저
+Environment=ASPNETCORE_ENVIRONMENT=Production
+Environment=DOTNET_PRINT_TELEMETRY_MESSAGE=false
+
+[Install]
+WantedBy=multi-user.target&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;위와 같이 서비스를 등록하고 서비스를 돌리기 위해서 서비스를 수행할 유저를 생성하여야 한다. 해당 유저는 애플리케이션 실행을 위한 유저이므로 쉘 접속 권한을 빼고 생성한다. 귀찮다고 루트로는 절대 돌리지 말고 별도 유저를 추가하자!&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;sh&quot;&gt;&lt;pre class=&quot;language-sh&quot;&gt;&lt;code class=&quot;language-sh&quot;&gt;useradd --shell /sbin/nologin www-data&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;실행을 위한 유저까지 정상 등록을 하였으면 서비스를 등록하고 실행한다.
+정상 수행되고 있는지 확인까지 해보자.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;$ sudo systemctl enable dotnet-first
+$ sudo systemctl start dotnet-first
+$ sudo systemctl status dotnet-first&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;해당 서비스의 &lt;strong&gt;Active&lt;/strong&gt; 상태가 &lt;strong&gt;active (runniung)&lt;/strong&gt;이면 정상 동작하고 있는 것이다.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/static/assets/20200515/dotnet-service-status.png&quot; alt=&quot;alt text&quot; title=&quot;서비스 등록 후 상태 체크&quot;&gt;&lt;/p&gt;
+&lt;h1 id=&quot;결론--추가로-공부해볼-것들&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EA%B2%B0%EB%A1%A0--%EC%B6%94%EA%B0%80%EB%A1%9C-%EA%B3%B5%EB%B6%80%ED%95%B4%EB%B3%BC-%EA%B2%83%EB%93%A4&quot; aria-label=&quot;결론  추가로 공부해볼 것들 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;결론 : 추가로 공부해볼 것들&lt;/h1&gt;
+&lt;p&gt;.Net Core프로젝트를 위한 .Net Core설정과 Nginx를 이용한 리버스 프록시 설정 방법을 알아보았다.
+서비스를 정상적으로 운영하기 위하여 로깅과 HTTPS 설정에 대해 알아보도록 하자.&lt;/p&gt;
+&lt;h1 id=&quot;참조&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EC%B0%B8%EC%A1%B0&quot; aria-label=&quot;참조 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;참조&lt;/h1&gt;
+&lt;ol&gt;
+&lt;li&gt;Nginx를 사용하여 Linux에서 ASP.NET Core 호스트 : &lt;a href=&quot;https://docs.microsoft.com/ko-kr/aspnet/core/host-and-deploy/linux-Nginx?view=aspnetcore-3.1&quot;&gt;https://docs.microsoft.com/ko-kr/aspnet/core/host-and-deploy/linux-Nginx?view=aspnetcore-3.1&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;CentOS 7 패키지 관리자 - .NET Core 설치: &lt;a href=&quot;https://docs.microsoft.com/ko-kr/dotnet/core/install/linux-package-manager-centos7&quot;&gt;https://docs.microsoft.com/ko-kr/dotnet/core/install/linux-package-manager-centos7&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;RHEL/CentOS 7 에서 방화벽(firewalld) 설정하기 - &lt;a href=&quot;https://www.lesstif.com/system-admin/rhel-centos-7-firewalld-22053128.html&quot;&gt;https://www.lesstif.com/system-admin/rhel-centos-7-firewalld-22053128.html&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;dotnet new - &lt;a href=&quot;https://docs.microsoft.com/ko-kr/dotnet/core/tools/dotnet-new&quot;&gt;https://docs.microsoft.com/ko-kr/dotnet/core/tools/dotnet-new&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;dotnet publish - &lt;a href=&quot;https://docs.microsoft.com/ko-kr/dotnet/core/tools/dotnet-publish&quot;&gt;https://docs.microsoft.com/ko-kr/dotnet/core/tools/dotnet-publish&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;dotnet build - &lt;a href=&quot;https://docs.microsoft.com/ko-kr/dotnet/core/tools/dotnet-build&quot;&gt;https://docs.microsoft.com/ko-kr/dotnet/core/tools/dotnet-build&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://docs.nginx.com/nginx/admin-guide/installing-nginx/installing-nginx-plus/#installing-nginx-plus-on-amazon-linux-centos-oracle-linux-and-rhel&quot;&gt;https://docs.nginx.com/nginx/admin-guide/installing-nginx/installing-nginx-plus/#installing-nginx-plus-on-amazon-linux-centos-oracle-linux-and-rhel&lt;/a&gt; - &lt;a href=&quot;https://docs.nginx.com/nginx/admin-guide/installing-nginx/installing-nginx-plus/#installing-nginx-plus-on-amazon-linux-centos-oracle-linux-and-rhel&quot;&gt;https://docs.nginx.com/nginx/admin-guide/installing-nginx/installing-nginx-plus/#installing-nginx-plus-on-amazon-linux-centos-oracle-linux-and-rhel&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;(13: Permission denied) while connecting to upstream:[nginx] - &lt;a href=&quot;https://stackoverflow.com/questions/23948527/13-permission-denied-while-connecting-to-upstreamnginx&quot;&gt;https://stackoverflow.com/questions/23948527/13-permission-denied-while-connecting-to-upstreamnginx&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;</content:encoded><author>mailto:taroguru@gmail.com</author></item><item><title><![CDATA[Ansible로 로컬 스크립트를 원격 서버에서 실행]]></title><description><![CDATA[다중 서버 공통 작업을 위한 Ansible 켜져있는 서비스들을 운영하다보면 복수의 서버에 공통 작업을 수행해야 될 때가 있다. 이를 위한 도구가 Ansible인데 공식 홈페이지의 소개를 빌리면 다음과 같다. What is Ansible?
+Ansible…]]></description><link>https://taroguru.github.io/ansible로-로컬-스크립트를-원격-서버에서-실행</link><guid isPermaLink="false">https://taroguru.github.io/ansible로-로컬-스크립트를-원격-서버에서-실행</guid><category><![CDATA[ansible]]></category><category><![CDATA[server]]></category><pubDate>Wed, 13 May 2020 00:00:00 GMT</pubDate><content:encoded>&lt;h1 id=&quot;다중-서버-공통-작업을-위한-ansible&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EB%8B%A4%EC%A4%91-%EC%84%9C%EB%B2%84-%EA%B3%B5%ED%86%B5-%EC%9E%91%EC%97%85%EC%9D%84-%EC%9C%84%ED%95%9C-ansible&quot; aria-label=&quot;다중 서버 공통 작업을 위한 ansible permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;다중 서버 공통 작업을 위한 Ansible&lt;/h1&gt;
+&lt;p&gt;켜져있는 서비스들을 운영하다보면 복수의 서버에 공통 작업을 수행해야 될 때가 있다. 이를 위한 도구가 Ansible인데 공식 홈페이지의 소개를 빌리면 다음과 같다.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;What is Ansible?
+Ansible is powerful IT automation that you can learn quickly. It&apos;s simple enough for everyone in your IT team to use, yet powerful enough to automate even the most complex deployments. Ansible handles repetitive tasks, giving your team more time to focus on innovation. - from Official Site&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;IT 자동화를 위하여 배우기 쉽고, 강력한 도구를 제공하며, 이를 통해 복잡한 배포 작업까지 수행할 수 있는 것이다. 이를 위하여 반복 작업을 다룰 수 있는 방법을 제공하는데, 반복 작업은 여러번 수행하는 반복 작업일 수도 있고, 여러 서버에 수행하는 반복작업일 수도 있다. 물론, 여러 서버에 주기적으로 수행해야하는 작업이 대부분이겠지만.
+예를 들면 다음과 같은 업무를 정의할 수 있다.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;주기적 반복 : 주기적으로 웹로그 파일을 압축 및 백업&lt;/li&gt;
+&lt;li&gt;다중 서버 반복 : 복수 서버의 시간 동기화를 위하여 ntp 설정 및 현재 시간 확인&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&quot;ansible-구성&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#ansible-%EA%B5%AC%EC%84%B1&quot; aria-label=&quot;ansible 구성 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Ansible 구성&lt;/h1&gt;
+&lt;p&gt;공식 홈페이지의 튜토리얼을 보면 Ansible의 구성 요소를 아래와 같이 정의하고 있다.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Playbooks&lt;/strong&gt; contain plays
+&lt;strong&gt;Plays&lt;/strong&gt; contain tasks
+&lt;strong&gt;Tasks&lt;/strong&gt; call &lt;strong&gt;modules&lt;/strong&gt;
+Tasks run sequentially
+&lt;strong&gt;Handlers&lt;/strong&gt; are triggered by tasks, and are run once, at the end of plays&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;조금 풀어서 적어보면 다음과 같다.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Ansible : 작업을 수행하는 Ansible 프로그램&lt;/li&gt;
+&lt;li&gt;Playbook : yaml로 정의된 작업 도구&lt;/li&gt;
+&lt;li&gt;Play : playbook에 정의된 개별 작업 뭉치&lt;/li&gt;
+&lt;li&gt;Task : play에 정의된&lt;/li&gt;
+&lt;li&gt;Modules : 단위 작업 프로그램??&lt;/li&gt;
+&lt;li&gt;Handlers : &lt;/li&gt;
+&lt;li&gt;Control Node : Ansible이 설치된 시스템. 콘솔 머신.&lt;/li&gt;
+&lt;li&gt;Target host : 작업이 수행될 타겟 서버로 ssh(or WinRM) 통신을 통하므로 별도 에이전트를 설치할 필요가 없다.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&quot;설치&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EC%84%A4%EC%B9%98&quot; aria-label=&quot;설치 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;설치&lt;/h1&gt;
+&lt;p&gt;Redhat의 제품이니 yum으로 설치하자.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;sh&quot;&gt;&lt;pre class=&quot;language-sh&quot;&gt;&lt;code class=&quot;language-sh&quot;&gt;$ sudo yum install ansible&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;ul&gt;
+&lt;li&gt;컨트롤 노드로 솔라리스, FreeBSD, 맥도 지원하지만 윈도우는 지원하지 않는다.&lt;/li&gt;
+&lt;li&gt;python으로 개발되었으므로 pip설치도 지원한다.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;sh&quot;&gt;&lt;pre class=&quot;language-sh&quot;&gt;&lt;code class=&quot;language-sh&quot;&gt;$ ansible --version
+ansible 2.9.7&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h1 id=&quot;작업&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EC%9E%91%EC%97%85&quot; aria-label=&quot;작업 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;작업&lt;/h1&gt;
+&lt;h2 id=&quot;콘솔-작업&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EC%BD%98%EC%86%94-%EC%9E%91%EC%97%85&quot; aria-label=&quot;콘솔 작업 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;콘솔 작업&lt;/h2&gt;
+&lt;p&gt;콘솔로 바로 명령을 수행할 수 있다. 로컬 호스트에 ping 모듈을 수행해보면 핑퐁을 잘 친다.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;sh&quot;&gt;&lt;pre class=&quot;language-sh&quot;&gt;&lt;code class=&quot;language-sh&quot;&gt;$ ansible localhost -m ping
+localhost | SUCCESS =&amp;gt; {
+    &amp;quot;changed&amp;quot;: false,
+    &amp;quot;ping&amp;quot;: &amp;quot;pong&amp;quot;
+}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;기본 명령이 localhost에서 정상적으로 돌아가는 것을 확인하였다. 이제&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;명령을 수행할 호스트를 정의하고,&lt;/li&gt;
+&lt;li&gt;돌릴 명령을 정의해보자.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h1 id=&quot;타겟-호스트-정의&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%ED%83%80%EA%B2%9F-%ED%98%B8%EC%8A%A4%ED%8A%B8-%EC%A0%95%EC%9D%98&quot; aria-label=&quot;타겟 호스트 정의 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;타겟 호스트 정의&lt;/h1&gt;
+&lt;h2 id=&quot;타겟-호스트&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%ED%83%80%EA%B2%9F-%ED%98%B8%EC%8A%A4%ED%8A%B8&quot; aria-label=&quot;타겟 호스트 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;타겟 호스트&lt;/h2&gt;
+&lt;p&gt;작업이 수행될 Target Host는 /etc/ansible/hosts에 정의되어 있다.
+웹서버 두대와 서버의 로그를 쌓는 로그 서버 한대를 동일 가 있다고, 해당 서버들으 ntpsynedserver라는 그룹으로 호스트그룹으로 묶는다고 하면 아래와 같이 작업할 수 있다.
+Ansible이 Agentless하게 동작할 수 있는 것은 ssh를 통해 명령을 주고 받기 때문이다.&lt;/p&gt;
+&lt;p&gt;Ansible이 접속정보를 알고 있어야 하는데
+패스워드가 너저분하게 널려있는걸 즐기지 않는 경우 ssh 파일을 등록해서 사용하면 된다.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;sh&quot;&gt;&lt;pre class=&quot;language-sh&quot;&gt;&lt;code class=&quot;language-sh&quot;&gt;$ vim /etc/ansible/hosts
+//아래 내용을 추가한다.
+[ntpsynedserver]
+web.taroguru.net
+web2.taroguru.net
+elastic.taroguru.net&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;호스트를 추가하고 호스트의 현재 시간을 읽어보면 다음과 같은 메세지가 출력된다.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;sh&quot;&gt;&lt;pre class=&quot;language-sh&quot;&gt;&lt;code class=&quot;language-sh&quot;&gt;#/etc/hosts 읽기
+$ ansible ntpsyncedserver -m shell -a &amp;quot;date&amp;quot;
+web.taroguru.net | UNREACHABLE! = {
+    &amp;quot;changed&amp;quot;:false,
+    &amp;quot;msg&amp;quot;:&amp;quot;Failed to connect to the host via ssh: Permission denied (publickey,gssapi-keyex,gssapi-with-mic,password).&amp;quot;,
+    &amp;quot;unreachable&amp;quot;:true
+}
+.
+.
+.&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;서버 도메인을 제대로 입력하였는데 UNREACHABLE!이 뜬다.
+왜않돼!?&lt;/p&gt;
+&lt;h2 id=&quot;접속-정보&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EC%A0%91%EC%86%8D-%EC%A0%95%EB%B3%B4&quot; aria-label=&quot;접속 정보 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;접속 정보&lt;/h2&gt;
+&lt;p&gt;Ansible은 Agentless하게 동작하는데 타겟 호스트에 명령을 내릴 때 전용 Agent를 사용하는 것이 아니라 SSH(or WinRM)를 이용한다. SSH Credentail이 있어야 타겟 호스트에서 작업을 수행할 수가 있는데 Credential 정보가 없으니 접근을 할 수 없는(UNREACHABLE) 것이다.&lt;/p&gt;
+&lt;p&gt;이를 위하여 Ansible로 수행할 작업의 권한을 가지고 있는 접속 정보(유저 정보)를 추가한다.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;sh&quot;&gt;&lt;pre class=&quot;language-sh&quot;&gt;&lt;code class=&quot;language-sh&quot;&gt;# 접속 정보 추가
+$ vim /etc/ansible/hosts
+//호스트 파일 정보 아래 다음 내용을 추가한다.
+[ntpsynedserver:vars]
+ansible_connection=ssh
+ansible_user=ansible_user
+ansible_password=ansible_password&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;em&gt;패스워드가 널려있는걸 좋아하지 않는 경우 ssh key파일을 등록해서 사용하자.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;접속 정보를 입력 후 다시 작업을 수행하면,&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;sh&quot;&gt;&lt;pre class=&quot;language-sh&quot;&gt;&lt;code class=&quot;language-sh&quot;&gt;#접속 정보 추가
+$ ansible ntpsyncedserver -m shell -a &amp;quot;date&amp;quot;
+web.taroguru.net | CHANGED | rc=0 &amp;gt;&amp;gt; 
+Wed May 13 18:19:10 KST 2020
+.
+.
+.&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;서버들의 현재 시간을 정상적으로 출력하는 것을 볼 수 있다.&lt;/p&gt;
+&lt;h1 id=&quot;작업-정의&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EC%9E%91%EC%97%85-%EC%A0%95%EC%9D%98&quot; aria-label=&quot;작업 정의 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;작업 정의&lt;/h1&gt;
+&lt;p&gt;콘솔로 매번 작업을 입력하면 반복을 할 수 없으므로 작업에 대한 정의가 필요한데 이를 정의한 YAML 파일을 Playbook이라고 부른다.
+글의 처음에 말해던 것 처럼 Playbook은 여러 개의 Play(즉, 배열)로 구성되며, 각 Play는 여러개의 Task(즉, Task의 배열)로 구성된다. 그리고 각 Task의 실질적인 기능 수행은 Ansible에 정의된 Module을 호출함으로써 사용할 수 있다. 플레이북을 살펴보면 다음과 같다.&lt;/p&gt;
+&lt;h2 id=&quot;playbook&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#playbook&quot; aria-label=&quot;playbook permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Playbook&lt;/h2&gt;
+&lt;p&gt;Playbook 구성은 크게 다음과 같다.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;yaml&quot;&gt;&lt;pre class=&quot;language-yaml&quot;&gt;&lt;code class=&quot;language-yaml&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;---&lt;/span&gt; &lt;span class=&quot;token comment&quot;&gt;#PLAYBOOK 형태&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;token key atrule&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; 플레이 이름                              &lt;span class=&quot;token comment&quot;&gt;#문법을 보면 알겠지만 단일 Play의 이름. 이런 Play를 복수개 정의할 수 있다.&lt;/span&gt;
+  &lt;span class=&quot;token key atrule&quot;&gt;hosts&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; 호스트명 혹은 정의한 호스트 그룹 명
+  &lt;span class=&quot;token key atrule&quot;&gt;vars&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;                                         &lt;span class=&quot;token comment&quot;&gt;#필요한 변수들 정의. &lt;/span&gt;
+    &lt;span class=&quot;token key atrule&quot;&gt;변수명&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; 변수 값                              &lt;span class=&quot;token comment&quot;&gt;#key/value 타입으로 정의&lt;/span&gt;
+  &lt;span class=&quot;token punctuation&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;token key atrule&quot;&gt;tasks&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;                                      &lt;span class=&quot;token comment&quot;&gt;#Play에 해당하는 Task 배열을 여기서부터 정의한다. 복수개의 Task를 정의할 수 있으며 순차적으로 수행된다.&lt;/span&gt;
+    &lt;span class=&quot;token punctuation&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;token key atrule&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; 태스크 이름                          &lt;span class=&quot;token comment&quot;&gt;#단일 Task에 대한 이름 정의&lt;/span&gt;
+      &lt;span class=&quot;token key atrule&quot;&gt;모듈이름&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; 모듈 argument                    &lt;span class=&quot;token comment&quot;&gt;#모듈을 이용하여 실제 작업을 수행한다.&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;...&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2 id=&quot;playbook-예제&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#playbook-%EC%98%88%EC%A0%9C&quot; aria-label=&quot;playbook 예제 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Playbook 예제&lt;/h2&gt;
+&lt;p&gt;문법에 따라  를 작성하면 다음과 같다.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;yaml&quot;&gt;&lt;pre class=&quot;language-yaml&quot;&gt;&lt;code class=&quot;language-yaml&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;---&lt;/span&gt; &lt;span class=&quot;token comment&quot;&gt;#checksecurity.yml&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;---&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;token key atrule&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; 보안점검
+  &lt;span class=&quot;token key atrule&quot;&gt;hosts&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; ntpsyncedserver
+  &lt;span class=&quot;token key atrule&quot;&gt;become_method&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; sudo
+  &lt;span class=&quot;token key atrule&quot;&gt;become_user&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; root
+  &lt;span class=&quot;token key atrule&quot;&gt;vars&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
+   &lt;span class=&quot;token key atrule&quot;&gt;checkscript&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; script/checklinux.sh
+   &lt;span class=&quot;token key atrule&quot;&gt;runningFolder&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; /tmp/checksecurity
+   &lt;span class=&quot;token key atrule&quot;&gt;resultFolder&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; result/&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt; ansible_date_time.date &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+  &lt;span class=&quot;token key atrule&quot;&gt;tasks&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
+    &lt;span class=&quot;token punctuation&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;token key atrule&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; 보안점검용 폴더 생성
+      &lt;span class=&quot;token key atrule&quot;&gt;file&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
+        &lt;span class=&quot;token key atrule&quot;&gt;path&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;{{ runningFolder }}&quot;&lt;/span&gt;
+        &lt;span class=&quot;token key atrule&quot;&gt;state&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; directory
+        &lt;span class=&quot;token key atrule&quot;&gt;mode&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;0755&apos;&lt;/span&gt;
+
+    &lt;span class=&quot;token punctuation&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;token key atrule&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; 보안 점검 스크립트 실행
+      &lt;span class=&quot;token key atrule&quot;&gt;script&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;{{ checkscript }}&quot;&lt;/span&gt;
+      &lt;span class=&quot;token key atrule&quot;&gt;args&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
+        &lt;span class=&quot;token key atrule&quot;&gt;chdir&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;{{ runningFolder }}&quot;&lt;/span&gt;
+      &lt;span class=&quot;token key atrule&quot;&gt;check_mode&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token boolean important&quot;&gt;false&lt;/span&gt;
+
+    &lt;span class=&quot;token punctuation&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;token key atrule&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; 점검 결과 폴더 생성
+      &lt;span class=&quot;token key atrule&quot;&gt;local_action&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
+        &lt;span class=&quot;token key atrule&quot;&gt;module&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; file
+        &lt;span class=&quot;token key atrule&quot;&gt;path&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;{{ resultFolder }}&quot;&lt;/span&gt;
+        &lt;span class=&quot;token key atrule&quot;&gt;state&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; directory
+        &lt;span class=&quot;token key atrule&quot;&gt;mode&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;0755&apos;&lt;/span&gt;
+
+    &lt;span class=&quot;token punctuation&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;token key atrule&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; 점검 결과 검색
+      &lt;span class=&quot;token key atrule&quot;&gt;find&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;  
+        &lt;span class=&quot;token key atrule&quot;&gt;paths&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;{{ runningFolder }}&quot;&lt;/span&gt; 
+        &lt;span class=&quot;token key atrule&quot;&gt;patterns&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;*.xml&quot;&lt;/span&gt;
+      &lt;span class=&quot;token key atrule&quot;&gt;register&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; files_to_copy
+
+    &lt;span class=&quot;token punctuation&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;token key atrule&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; 점검 결과 복사
+      &lt;span class=&quot;token key atrule&quot;&gt;fetch&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
+        &lt;span class=&quot;token key atrule&quot;&gt;src&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;{{ item.path }}&quot;&lt;/span&gt;
+        &lt;span class=&quot;token key atrule&quot;&gt;dest&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;{{ resultFolder }}/&quot;&lt;/span&gt;
+        &lt;span class=&quot;token key atrule&quot;&gt;flat&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; yes
+      &lt;span class=&quot;token key atrule&quot;&gt;with_items&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;{{ files_to_copy.files }}&quot;&lt;/span&gt;
+
+    &lt;span class=&quot;token punctuation&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;token key atrule&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; 점검 파일 삭제
+      &lt;span class=&quot;token key atrule&quot;&gt;file&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
+        &lt;span class=&quot;token key atrule&quot;&gt;path&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;{{ runningFolder }}/&quot;&lt;/span&gt;
+        &lt;span class=&quot;token key atrule&quot;&gt;state&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; absent
+&lt;span class=&quot;token punctuation&quot;&gt;...&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;위 플레이북에서 모듈을 어떻게 사용하였는지 살펴보면,&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;file&lt;/strong&gt; : 스크립트를 수행할 폴더를 생성&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;script&lt;/strong&gt; : 모듈을 이용하여 스크립트를 수행하였다.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;find&lt;/strong&gt; : 수행 결과로 떨어진 파일 목록을 획득하고&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;register&lt;/strong&gt; : 파일 목록을 변수에 저장한다.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;featch&lt;/strong&gt; : 획득한 파일 목록을 로컬로 다운로드 받는다.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;ansible-playbook을 이용하여 간단하게 실행할 수 있다.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;sh&quot;&gt;&lt;pre class=&quot;language-sh&quot;&gt;&lt;code class=&quot;language-sh&quot;&gt;$ ansible-playbook checksecurity.yml&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h1 id=&quot;결론&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EA%B2%B0%EB%A1%A0&quot; aria-label=&quot;결론 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;결론&lt;/h1&gt;
+&lt;h1 id=&quot;참조&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EC%B0%B8%EC%A1%B0&quot; aria-label=&quot;참조 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;참조&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;Ansible Official Homepage : &lt;a href=&quot;https://www.ansible.com/&quot;&gt;https://www.ansible.com/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Installing Ansible : &lt;a href=&quot;https://docs.ansible.com/ansible/latest/installation_guide/intro_installation.html&quot;&gt;https://docs.ansible.com/ansible/latest/installation_guide/intro_installation.html&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;[DevOps] Windows 10에 ansible 이용하기 : &lt;a href=&quot;http://egloos.zum.com/mcchae/v/11315161&quot;&gt;http://egloos.zum.com/mcchae/v/11315161&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Ansible을 이용한 시스템 구성관리(1) – Vagrant를 이용한 테스트 가상환경 만들기 : &lt;a href=&quot;https://daddyprogrammer.org/post/7369/ansible-vagrant/&quot;&gt;https://daddyprogrammer.org/post/7369/ansible-vagrant/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;ol&gt;
+&lt;li&gt;Ansible (앤서블) 로 전체 서버 사용자 추가하기 - 호스트 연결하기 : &lt;a href=&quot;https://jojoldu.tistory.com/432?category=777282&quot;&gt;https://jojoldu.tistory.com/432?category=777282&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;script – Runs a local script on a remote node after transferring it : &lt;a href=&quot;https://docs.ansible.com/ansible/latest/modules/script_module.html&quot;&gt;https://docs.ansible.com/ansible/latest/modules/script_module.html&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;file – Manage files and file properties : &lt;a href=&quot;https://docs.ansible.com/ansible/latest/modules/file_module.html&quot;&gt;https://docs.ansible.com/ansible/latest/modules/file_module.html&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;fetch – Fetch files from remote nodes : &lt;a href=&quot;https://docs.ansible.com/ansible/latest/modules/fetch_module.html&quot;&gt;https://docs.ansible.com/ansible/latest/modules/fetch_module.html&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content:encoded><author>mailto:taroguru@gmail.com</author></item><item><title><![CDATA[MapReduce 학습]]></title><description><![CDATA[맵리듀스? 맵리듀스? 무엇? 
+데이터에서 원하는 결과를 뽑아내기 위한 방법으로 원본의 데이터를 맵(map)을 만들어서 원하는 데이터로 줄여주는(reduce…]]></description><link>https://taroguru.github.io/map-reduce-학습</link><guid isPermaLink="false">https://taroguru.github.io/map-reduce-학습</guid><category><![CDATA[mapreduce]]></category><pubDate>Sun, 10 May 2020 00:00:00 GMT</pubDate><content:encoded>&lt;h1 id=&quot;맵리듀스&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EB%A7%B5%EB%A6%AC%EB%93%80%EC%8A%A4&quot; aria-label=&quot;맵리듀스 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;맵리듀스?&lt;/h1&gt;
 &lt;h1 id=&quot;맵리듀스-1&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EB%A7%B5%EB%A6%AC%EB%93%80%EC%8A%A4-1&quot; aria-label=&quot;맵리듀스 1 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;맵리듀스?&lt;/h1&gt;
 &lt;ol&gt;
 &lt;li&gt;무엇?
@@ -70,7 +567,7 @@
 &lt;li&gt;gh-pages에서 remote repository 배포 설정 :
 &lt;a href=&quot;https://github.com/tschaub/gh-pages/issues/290&quot;&gt;https://github.com/tschaub/gh-pages/issues/290&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&quot;https://medium.com/swlh/deploying-react-apps-to-github-pages-on-master-branch-creating-a-user-site-bc96c2a37dc8&quot;&gt;https://medium.com/swlh/deploying-react-apps-to-github-pages-on-master-branch-creating-a-user-site-bc96c2a37dc8&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</content:encoded><author>mailto:taroguru@gmail.com</author></item><item><title><![CDATA[켜져있어서 돌아가는 서비스 운영하기]]></title><description><![CDATA[…]]></description><link>https://taroguru.github.io/켜져있어서-돌아가는-서비스-운영하기</link><guid isPermaLink="false">https://taroguru.github.io/켜져있어서-돌아가는-서비스-운영하기</guid><category><![CDATA[programming]]></category><category><![CDATA[software development process]]></category><category><![CDATA[software lifecycle]]></category><category><![CDATA[development]]></category><category><![CDATA[operation]]></category><pubDate>Mon, 04 May 2020 00:00:00 GMT</pubDate><content:encoded>&lt;h1 id=&quot;켜져있어서-돌아가는-서비스를-관리의-영역으로&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EC%BC%9C%EC%A0%B8%EC%9E%88%EC%96%B4%EC%84%9C-%EB%8F%8C%EC%95%84%EA%B0%80%EB%8A%94-%EC%84%9C%EB%B9%84%EC%8A%A4%EB%A5%BC-%EA%B4%80%EB%A6%AC%EC%9D%98-%EC%98%81%EC%97%AD%EC%9C%BC%EB%A1%9C&quot; aria-label=&quot;켜져있어서 돌아가는 서비스를 관리의 영역으로 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;켜져있어서 돌아가는 서비스를 관리의 영역으로&lt;/h1&gt;
+&lt;/ul&gt;</content:encoded><author>mailto:taroguru@gmail.com</author></item><item><title><![CDATA[켜져있어서 돌아가는 서비스 운영하기]]></title><description><![CDATA[…]]></description><link>https://taroguru.github.io/켜져있어서-돌아가는-서비스-운영하기</link><guid isPermaLink="false">https://taroguru.github.io/켜져있어서-돌아가는-서비스-운영하기</guid><category><![CDATA[programming]]></category><category><![CDATA[software-development-process]]></category><category><![CDATA[software-lifecycle]]></category><category><![CDATA[development]]></category><category><![CDATA[operation]]></category><pubDate>Mon, 04 May 2020 00:00:00 GMT</pubDate><content:encoded>&lt;h1 id=&quot;켜져있어서-돌아가는-서비스를-관리의-영역으로&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EC%BC%9C%EC%A0%B8%EC%9E%88%EC%96%B4%EC%84%9C-%EB%8F%8C%EC%95%84%EA%B0%80%EB%8A%94-%EC%84%9C%EB%B9%84%EC%8A%A4%EB%A5%BC-%EA%B4%80%EB%A6%AC%EC%9D%98-%EC%98%81%EC%97%AD%EC%9C%BC%EB%A1%9C&quot; aria-label=&quot;켜져있어서 돌아가는 서비스를 관리의 영역으로 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;켜져있어서 돌아가는 서비스를 관리의 영역으로&lt;/h1&gt;
 &lt;p&gt;시스템 관리자라면 켜져있어서 돌아가는 서비스들을 운영한 경험이 있을거다.
 많은 컨퍼런스, 밋업, 개발자 블로그, 업체의 기술 블로그들에서 배포 파이프라인을 구성하고 모니터링을 고민하고 있을 때, 쓸쓸하게 팀에 git을 어디서부터 적용해야할지 고민하고 있을 많은 시스템 운영자, 데브옵스 엔지니어, 인프라 엔지니어들과 이 경험을 나누고자 한다.&lt;/p&gt;
 &lt;h1 id=&quot;무엇부터-해야할까&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EB%AC%B4%EC%97%87%EB%B6%80%ED%84%B0-%ED%95%B4%EC%95%BC%ED%95%A0%EA%B9%8C&quot; aria-label=&quot;무엇부터 해야할까 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;무엇부터 해야할까?&lt;/h1&gt;
@@ -154,7 +651,7 @@
 &lt;p&gt;인풋부터 아웃풋 사이의 소프트웨어 개발 프로세스이다. 기관에 따라 단위기능을 혼자 치고가면 PM롤을 포함해야할 수도 있지만 기획서라는 인풋에서 소프트웨어 바이너리라는 아웃풋을 끊임없이 만들어가야 하는 관점으로 볼때 워터폴 전체를 커버하기보다 소프트웨어 배포 프로세스를 중심으로 업무 프로세스를 가져간다. 요구사항, 설계에 대한 부분보다 개발 및 배포가 중심이 된다.&lt;/p&gt;
 &lt;h2 id=&quot;운영자&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EC%9A%B4%EC%98%81%EC%9E%90&quot; aria-label=&quot;운영자 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;운영자&lt;/h2&gt;
 &lt;h2 id=&quot;-전체-모니터링-구성-이미지-&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#-%EC%A0%84%EC%B2%B4-%EB%AA%A8%EB%8B%88%ED%84%B0%EB%A7%81-%EA%B5%AC%EC%84%B1-%EC%9D%B4%EB%AF%B8%EC%A7%80-&quot; aria-label=&quot; 전체 모니터링 구성 이미지  permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;??? 전체 모니터링 구성 이미지 ???&lt;/h2&gt;
-&lt;p&gt;시스템 운영자 괁점에서 각각의 시스템이 얼마나 잘 돌아가고있는지 확인하는 것이 주요 골자가 된다. 앞단까지의 개발이 완료된 바이너리를 잘 운영할 수 있는가.
+&lt;p&gt;시스템 운영자 관점에서 각각의 시스템이 얼마나 잘 돌아가고있는지 확인하는 것이 주요 골자가 된다. 앞단까지의 개발이 완료된 바이너리를 잘 운영할 수 있는가.
 모니터링/장애 복구 관점에 운영 프로세스가 필요하게 되며 실제 노드를 중심으로 관리하게 된다.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;서버&lt;/li&gt;
@@ -167,430 +664,4 @@
 &lt;ul&gt;
 &lt;li&gt;타이틀 이미지 -
 &lt;a href=&quot;https://pixabay.com/ko/photos/%EC%84%A0%EC%85%8B-%ED%95%98%EC%9D%B4%ED%82%B9-%EC%9D%B8%EC%82%AC%EB%A7%90-2173918/&quot;&gt;https://pixabay.com/ko/photos/%EC%84%A0%EC%85%8B-%ED%95%98%EC%9D%B4%ED%82%B9-%EC%9D%B8%EC%82%AC%EB%A7%90-2173918/&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</content:encoded><author>mailto:taroguru@gmail.com</author></item><item><title><![CDATA[Introducing Gatsby Material Starter]]></title><description><![CDATA[Around a year ago, this project was one of the first ones ported to the  version of GatsbyJS. And now, it's super exciting for me to…]]></description><link>https://taroguru.github.io/introducing-gatsby-material-starter</link><guid isPermaLink="false">https://taroguru.github.io/introducing-gatsby-material-starter</guid><category><![CDATA[gatsby]]></category><category><![CDATA[material]]></category><category><![CDATA[starter]]></category><pubDate>Mon, 02 Jul 2018 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;Around a year ago, this project was one of the first ones ported to the &lt;code class=&quot;language-text&quot;&gt;v1&lt;/code&gt; version of GatsbyJS.&lt;/p&gt;
-&lt;blockquote class=&quot;twitter-tweet&quot; data-lang=&quot;en&quot;&gt;&lt;p lang=&quot;en&quot; dir=&quot;ltr&quot;&gt;Great news! Gatsby Material starter is now based on stable V1 of &lt;a href=&quot;https://twitter.com/gatsbyjs&quot;&gt;@gatsbyjs&lt;/a&gt;!&lt;a href=&quot;https://t.co/P2JqNbcRmk&quot;&gt;https://t.co/P2JqNbcRmk&lt;/a&gt;&lt;/p&gt;&amp;mdash; Ruben Harutyunyan (@Vagr9K) &lt;a href=&quot;https://twitter.com/Vagr9K/status/883073085963993089&quot;&gt;July 6, 2017&lt;/a&gt;&lt;/blockquote&gt;
-&lt;p&gt;And now, it&apos;s super exciting for me to announce the &lt;code class=&quot;language-text&quot;&gt;v2&lt;/code&gt; version of &lt;code class=&quot;language-text&quot;&gt;Gatsby Material Starter&lt;/code&gt; with the support of the newest Gatsby v2 features!&lt;/p&gt;
-&lt;p&gt;You can also visit &lt;a href=&quot;https://vagr9k.me&quot;&gt;my personal blog&lt;/a&gt; if you want to see a fully implemented blog based on this starter.&lt;/p&gt;
-&lt;p&gt;New features are:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;NetlifyCMS support&lt;/li&gt;
-&lt;li&gt;Complete optimization of all image assets via &lt;code class=&quot;language-text&quot;&gt;gatsby-image&lt;/code&gt; for faster loading times&lt;/li&gt;
-&lt;li&gt;New date formatting options&lt;/li&gt;
-&lt;li&gt;Netlify build configuration to make deploys easier&lt;/li&gt;
-&lt;li&gt;Less restrictive URL options&lt;/li&gt;
-&lt;li&gt;Bug fixes related to dates and sorting&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Full feature list:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Blazing fast loading times thanks to pre-rendered HTML and automatic chunk loading of JS files&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a href=&quot;https://github.com/mlaursen/react-md&quot;&gt;React-MD&lt;/a&gt; for Material design&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Integrated FontAwesome support&lt;/li&gt;
-&lt;li&gt;Integrated Material Icons support&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;SASS/SCSS styling&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://www.netlifycms.org/docs/intro/&quot;&gt;NetlifyCMS&lt;/a&gt; support for creating/editing posts via admin panel&lt;/li&gt;
-&lt;li&gt;Separate components for everything&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;High configurability:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;User information&lt;/li&gt;
-&lt;li&gt;User social profiles&lt;/li&gt;
-&lt;li&gt;Copyright information&lt;/li&gt;
-&lt;li&gt;More!&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Author segment&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Name&lt;/li&gt;
-&lt;li&gt;Location&lt;/li&gt;
-&lt;li&gt;Description&lt;/li&gt;
-&lt;li&gt;Links&lt;/li&gt;
-&lt;li&gt;Follow Me button&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Posts in Markdown&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Code syntax highlighting&lt;/li&gt;
-&lt;li&gt;Embedded YouTube videos&lt;/li&gt;
-&lt;li&gt;Embedded Tweets&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Tags&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Seprate page for posts under each tag&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Categories&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Separate page for posts under each category&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Suggested posts segment&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Disqus support&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Notifications about new disqus comments&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Responsive design&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;On mobile, Disqus is loaded only after expanding comments for better performance&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Social features&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Twitter tweet button&lt;/li&gt;
-&lt;li&gt;Facebook share/share count&lt;/li&gt;
-&lt;li&gt;Reddit share/share count&lt;/li&gt;
-&lt;li&gt;Google+ share button&lt;/li&gt;
-&lt;li&gt;LinkedIn share button&lt;/li&gt;
-&lt;li&gt;Telegram share button&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;SEO&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Sitemap generation&lt;/li&gt;
-&lt;li&gt;robots.txt&lt;/li&gt;
-&lt;li&gt;General description tags&lt;/li&gt;
-&lt;li&gt;Schema.org JSONLD (Google Rich Snippets)&lt;/li&gt;
-&lt;li&gt;OpenGraph Tags (Facebook/Google+/Pinterest)&lt;/li&gt;
-&lt;li&gt;Twitter Tags (Twitter Cards)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;RSS feeds&lt;/li&gt;
-&lt;li&gt;Loading progress for slow networks&lt;/li&gt;
-&lt;li&gt;Offline support&lt;/li&gt;
-&lt;li&gt;Web App Manifest support&lt;/li&gt;
-&lt;li&gt;Automatic image transformation and size optimization&lt;/li&gt;
-&lt;li&gt;Netlify deploy configuration&lt;/li&gt;
-&lt;li&gt;Google Analytics support&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Development tools&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;ESLint for linting&lt;/li&gt;
-&lt;li&gt;Prettier for code style&lt;/li&gt;
-&lt;li&gt;Remark-Lint for linting Markdown&lt;/li&gt;
-&lt;li&gt;write-good for linting English prose&lt;/li&gt;
-&lt;li&gt;gh-pages for deploying to GitHub pages&lt;/li&gt;
-&lt;li&gt;CodeClimate configuration file and badge&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;NOTE: Take a look at &lt;a href=&quot;https://github.com/Vagr9K/gatsby-advanced-starter&quot;&gt;gatsby-advanced-starter&lt;/a&gt; if you prefer building UI from scratch and/or only interested in fundamental features.&lt;/p&gt;
-&lt;p&gt;More information is available on &lt;a href=&quot;https://github.com/Vagr9K/gatsby-material-starter&quot;&gt;GitHub repository page&lt;/a&gt;.&lt;/p&gt;</content:encoded><author>mailto:taroguru@gmail.com</author></item><item><title><![CDATA[Big Test]]></title><description><![CDATA[NOTE: This "post" is based on Markdown Cheatsheet and is meant to test styling of Markdown generated documents. This is intended as a quick…]]></description><link>https://taroguru.github.io/big-sample-test</link><guid isPermaLink="false">https://taroguru.github.io/big-sample-test</guid><category><![CDATA[test]]></category><category><![CDATA[huge]]></category><pubDate>Thu, 01 Mar 2018 00:00:00 GMT</pubDate><content:encoded>&lt;h1 id=&quot;note-this-post-is-based-on-markdown-cheatsheet-and-is-meant-to-test-styling-of-markdown-generated-documents&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#note-this-post-is-based-on-markdown-cheatsheet-and-is-meant-to-test-styling-of-markdown-generated-documents&quot; aria-label=&quot;note this post is based on markdown cheatsheet and is meant to test styling of markdown generated documents permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;NOTE: This &quot;post&quot; is based on &lt;a href=&quot;https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet&quot;&gt;Markdown Cheatsheet&lt;/a&gt; and is meant to test styling of Markdown generated documents.&lt;/h1&gt;
-&lt;p&gt;This is intended as a quick reference and showcase. For more complete info, see &lt;a href=&quot;http://daringfireball.net/projects/markdown/&quot;&gt;John Gruber&apos;s original spec&lt;/a&gt; and the &lt;a href=&quot;http://github.github.com/github-flavored-markdown/&quot;&gt;Github-flavored Markdown info page&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;This cheatsheet is specifically &lt;em&gt;Markdown Here&apos;s&lt;/em&gt; version of Github-flavored Markdown. This differs slightly in styling and syntax from what Github uses, so what you see below might vary a little from what you get in a &lt;em&gt;Markdown Here&lt;/em&gt; email, but it should be pretty close.&lt;/p&gt;
-&lt;p&gt;You can play around with Markdown on our &lt;a href=&quot;http://www.markdown-here.com/livedemo.html&quot;&gt;live demo page&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;(If you&apos;re not a Markdown Here user, check out the &lt;a href=&quot;./Markdown-Cheatsheet&quot;&gt;Markdown Cheatsheet&lt;/a&gt; that is not specific to MDH. But, really, you should also use Markdown Here, because it&apos;s awesome. &lt;a href=&quot;http://markdown-here.com&quot;&gt;http://markdown-here.com&lt;/a&gt;)&lt;/p&gt;
-&lt;h5 id=&quot;table-of-contents&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#table-of-contents&quot; aria-label=&quot;table of contents permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Table of Contents&lt;/h5&gt;
-&lt;p&gt;&lt;a href=&quot;#headers&quot;&gt;Headers&lt;/a&gt;
-&lt;a href=&quot;#emphasis&quot;&gt;Emphasis&lt;/a&gt;
-&lt;a href=&quot;#lists&quot;&gt;Lists&lt;/a&gt;
-&lt;a href=&quot;#links&quot;&gt;Links&lt;/a&gt;
-&lt;a href=&quot;#images&quot;&gt;Images&lt;/a&gt;
-&lt;a href=&quot;#code&quot;&gt;Code and Syntax Highlighting&lt;/a&gt;
-&lt;a href=&quot;#tables&quot;&gt;Tables&lt;/a&gt;
-&lt;a href=&quot;#blockquotes&quot;&gt;Blockquotes&lt;/a&gt;
-&lt;a href=&quot;#html&quot;&gt;Inline HTML&lt;/a&gt;
-&lt;a href=&quot;#hr&quot;&gt;Horizontal Rule&lt;/a&gt;
-&lt;a href=&quot;#lines&quot;&gt;Line Breaks&lt;/a&gt;
-&lt;a href=&quot;#videos&quot;&gt;YouTube Videos&lt;/a&gt;&lt;/p&gt;
-&lt;a name=&quot;headers&quot;/&gt;
-&lt;h2 id=&quot;headers&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#headers&quot; aria-label=&quot;headers permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Headers&lt;/h2&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;no-highlight&quot;&gt;&lt;pre class=&quot;language-no-highlight&quot;&gt;&lt;code class=&quot;language-no-highlight&quot;&gt;# H1
-## H2
-### H3
-#### H4
-##### H5
-###### H6
-
-Alternatively, for H1 and H2, an underline-ish style:
-
-Alt-H1
-======
-
-Alt-H2
-------&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;h1 id=&quot;h1&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#h1&quot; aria-label=&quot;h1 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;H1&lt;/h1&gt;
-&lt;h2 id=&quot;h2&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#h2&quot; aria-label=&quot;h2 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;H2&lt;/h2&gt;
-&lt;h3 id=&quot;h3&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#h3&quot; aria-label=&quot;h3 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;H3&lt;/h3&gt;
-&lt;h4 id=&quot;h4&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#h4&quot; aria-label=&quot;h4 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;H4&lt;/h4&gt;
-&lt;h5 id=&quot;h5&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#h5&quot; aria-label=&quot;h5 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;H5&lt;/h5&gt;
-&lt;h6 id=&quot;h6&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#h6&quot; aria-label=&quot;h6 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;H6&lt;/h6&gt;
-&lt;p&gt;Alternatively, for H1 and H2, an underline-ish style:&lt;/p&gt;
-&lt;h1 id=&quot;alt-h1&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#alt-h1&quot; aria-label=&quot;alt h1 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Alt-H1&lt;/h1&gt;
-&lt;h2 id=&quot;alt-h2&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#alt-h2&quot; aria-label=&quot;alt h2 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Alt-H2&lt;/h2&gt;
-&lt;a name=&quot;emphasis&quot;/&gt;
-&lt;h2 id=&quot;emphasis&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#emphasis&quot; aria-label=&quot;emphasis permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Emphasis&lt;/h2&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;no-highlight&quot;&gt;&lt;pre class=&quot;language-no-highlight&quot;&gt;&lt;code class=&quot;language-no-highlight&quot;&gt;Emphasis, aka italics, with *asterisks* or _underscores_.
-
-Strong emphasis, aka bold, with **asterisks** or __underscores__.
-
-Combined emphasis with **asterisks and _underscores_**.
-
-Strikethrough uses two tildes. ~~Scratch this.~~&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;Emphasis, aka italics, with &lt;em&gt;asterisks&lt;/em&gt; or &lt;em&gt;underscores&lt;/em&gt;.&lt;/p&gt;
-&lt;p&gt;Strong emphasis, aka bold, with &lt;strong&gt;asterisks&lt;/strong&gt; or &lt;strong&gt;underscores&lt;/strong&gt;.&lt;/p&gt;
-&lt;p&gt;Combined emphasis with &lt;strong&gt;asterisks and &lt;em&gt;underscores&lt;/em&gt;&lt;/strong&gt;.&lt;/p&gt;
-&lt;p&gt;Strikethrough uses two tildes. &lt;del&gt;Scratch this.&lt;/del&gt;&lt;/p&gt;
-&lt;a name=&quot;lists&quot;/&gt;
-&lt;h2 id=&quot;lists&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#lists&quot; aria-label=&quot;lists permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Lists&lt;/h2&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;no-highlight&quot;&gt;&lt;pre class=&quot;language-no-highlight&quot;&gt;&lt;code class=&quot;language-no-highlight&quot;&gt;1. First ordered list item
-2. Another item
-  * Unordered sub-list.
-1. Actual numbers don&amp;#39;t matter, just that it&amp;#39;s a number
-  1. Ordered sub-list
-4. And another item.
-
-   Some text that should be aligned with the above item.
-
-* Unordered list can use asterisks
-- Or minuses
-+ Or pluses&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;ol&gt;
-&lt;li&gt;First ordered list item&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Another item&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Unordered sub-list.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Actual numbers don&apos;t matter, just that it&apos;s a number&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;Ordered sub-list&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;And another item.&lt;/p&gt;
-&lt;p&gt;Some text that should be aligned with the above item.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;Unordered list can use asterisks&lt;/li&gt;
-&lt;li&gt;Or minuses&lt;/li&gt;
-&lt;li&gt;Or pluses&lt;/li&gt;
-&lt;/ol&gt;
-&lt;a name=&quot;links&quot;/&gt;
-&lt;h2 id=&quot;links&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#links&quot; aria-label=&quot;links permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Links&lt;/h2&gt;
-&lt;p&gt;There are two ways to create links.&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;no-highlight&quot;&gt;&lt;pre class=&quot;language-no-highlight&quot;&gt;&lt;code class=&quot;language-no-highlight&quot;&gt;[I&amp;#39;m an inline-style link](https://www.google.com)
-
-[I&amp;#39;m a reference-style link][Arbitrary case-insensitive reference text]
-
-[You can use numbers for reference-style link definitions][1]
-
-Or leave it empty and use the [link text itself]
-
-URLs and URLs in angle brackets will automatically get turned into links.
-http://www.example.com or &amp;lt;http://www.example.com&amp;gt; and sometimes
-example.com (but not on Github, for example).
-
-Some text to show that the reference links can follow later.
-
-[arbitrary case-insensitive reference text]: https://www.mozilla.org
-[1]: http://slashdot.org
-[link text itself]: http://www.reddit.com&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;&lt;a href=&quot;https://www.google.com&quot;&gt;I&apos;m an inline-style link&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;https://www.mozilla.org&quot;&gt;I&apos;m a reference-style link&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;http://slashdot.org&quot;&gt;You can use numbers for reference-style link definitions&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;Or leave it empty and use the &lt;a href=&quot;http://www.reddit.com&quot;&gt;link text itself&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;URLs and URLs in angle brackets will automatically get turned into links.
-&lt;a href=&quot;http://www.example.com&quot;&gt;http://www.example.com&lt;/a&gt; or &lt;a href=&quot;http://www.example.com&quot;&gt;http://www.example.com&lt;/a&gt; and sometimes
-example.com (but not on Github, for example).&lt;/p&gt;
-&lt;p&gt;Some text to show that the reference links can follow later.&lt;/p&gt;
-&lt;a name=&quot;images&quot;/&gt;
-&lt;h2 id=&quot;images&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#images&quot; aria-label=&quot;images permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Images&lt;/h2&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;no-highlight&quot;&gt;&lt;pre class=&quot;language-no-highlight&quot;&gt;&lt;code class=&quot;language-no-highlight&quot;&gt;Here&amp;#39;s our logo (hover to see the title text):
-
-Inline-style:
-![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png &amp;quot;Logo Title Text 1&amp;quot;)
-
-Reference-style:
-![alt text][logo]
-
-[logo]: https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png &amp;quot;Logo Title Text 2&amp;quot;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;Here&apos;s our logo (hover to see the title text):&lt;/p&gt;
-&lt;p&gt;Inline-style:
-&lt;img src=&quot;https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png&quot; alt=&quot;alt text&quot; title=&quot;Logo Title Text 1&quot;&gt;&lt;/p&gt;
-&lt;p&gt;Reference-style:
-&lt;img src=&quot;https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png&quot; alt=&quot;alt text&quot; title=&quot;Logo Title Text 2&quot;&gt;&lt;/p&gt;
-&lt;a name=&quot;code&quot;/&gt;
-&lt;h2 id=&quot;code-and-syntax-highlighting&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#code-and-syntax-highlighting&quot; aria-label=&quot;code and syntax highlighting permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Code and Syntax Highlighting&lt;/h2&gt;
-&lt;p&gt;Code blocks are part of the Markdown spec, but syntax highlighting isn&apos;t. However, many renderers -- like Github&apos;s and &lt;em&gt;Markdown Here&lt;/em&gt; -- support syntax highlighting. &lt;em&gt;Markdown Here&lt;/em&gt; supports highlighting for dozens of languages (and not-really-languages, like diffs and HTTP headers); to see the complete list, and how to write the language names, see the &lt;a href=&quot;http://softwaremaniacs.org/media/soft/highlight/test.html&quot;&gt;highlight.js demo page&lt;/a&gt;.&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;no-highlight&quot;&gt;&lt;pre class=&quot;language-no-highlight&quot;&gt;&lt;code class=&quot;language-no-highlight&quot;&gt;Inline `code` has `back-ticks around` it.&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;Inline &lt;code class=&quot;language-text&quot;&gt;code&lt;/code&gt; has &lt;code class=&quot;language-text&quot;&gt;back-ticks around&lt;/code&gt; it.&lt;/p&gt;
-&lt;p&gt;Blocks of code are either fenced by lines with three back-ticks &lt;code&gt;`&lt;code class=&quot;language-text&quot;&gt;&lt;/code&gt;&lt;/code&gt;, or are indented with four spaces. I recommend only using the fenced code blocks -- they&apos;re easier and only they support syntax highlighting.&lt;/p&gt;
-&lt;pre lang=&quot;no-highlight&quot;&gt;&lt;code&gt;```javascript
-var s = &quot;JavaScript syntax highlighting&quot;;
-alert(s);
-```
-
-```python
-s = &quot;Python syntax highlighting&quot;
-print s
-```
-
-```
-No language indicated, so no syntax highlighting.
-But let&apos;s throw in a &amp;lt;b&amp;gt;tag&amp;lt;/b&amp;gt;.
-```
-&lt;/code&gt;&lt;/pre&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;javascript&quot;&gt;&lt;pre class=&quot;language-javascript&quot;&gt;&lt;code class=&quot;language-javascript&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;var&lt;/span&gt; s &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;JavaScript syntax highlighting&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;token function&quot;&gt;alert&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;s&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;python&quot;&gt;&lt;pre class=&quot;language-python&quot;&gt;&lt;code class=&quot;language-python&quot;&gt;s &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;Python syntax highlighting&quot;&lt;/span&gt;
-&lt;span class=&quot;token keyword&quot;&gt;print&lt;/span&gt; s&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;No language indicated, so no syntax highlighting in Markdown Here (varies on Github).
-But let&amp;#39;s throw in a &amp;lt;b&amp;gt;tag&amp;lt;/b&amp;gt;.&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;Again, to see what languages are available for highlighting, and how to write those language names, see the &lt;a href=&quot;http://softwaremaniacs.org/media/soft/highlight/test.html&quot;&gt;highlight.js demo page&lt;/a&gt;.&lt;/p&gt;
-&lt;a name=&quot;tables&quot;/&gt;
-&lt;h2 id=&quot;tables&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#tables&quot; aria-label=&quot;tables permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Tables&lt;/h2&gt;
-&lt;p&gt;Tables aren&apos;t part of the core Markdown spec, but they are part of GFM and &lt;em&gt;Markdown Here&lt;/em&gt; supports them. They are an easy way of adding tables to your email -- a task that would otherwise require copy-pasting from another application.&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;no-highlight&quot;&gt;&lt;pre class=&quot;language-no-highlight&quot;&gt;&lt;code class=&quot;language-no-highlight&quot;&gt;Colons can be used to align columns.
-
-| Tables        | Are           | Cool  |
-| ------------- | :-----------: | ----: |
-| col 3 is      | right-aligned | $1600 |
-| col 2 is      | centered      | $12   |
-| zebra stripes | are neat      | $1    |
-
-The outer pipes (|) are optional, and you don&amp;#39;t need to make the raw Markdown line up prettily. You can also use inline Markdown.
-
-| | Markdown | Less           | Pretty     |     |
-| | ------------- | --------------- | ---------- |------- |
-| | *Still*   | `renders` | **nicely** | |
-| | 1               | 2                 | 3          |          |&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;Colons can be used to align columns.&lt;/p&gt;
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;Tables&lt;/th&gt;
-&lt;th align=&quot;center&quot;&gt;Are&lt;/th&gt;
-&lt;th align=&quot;right&quot;&gt;Cool&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td&gt;col 3 is&lt;/td&gt;
-&lt;td align=&quot;center&quot;&gt;right-aligned&lt;/td&gt;
-&lt;td align=&quot;right&quot;&gt;$1600&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;col 2 is&lt;/td&gt;
-&lt;td align=&quot;center&quot;&gt;centered&lt;/td&gt;
-&lt;td align=&quot;right&quot;&gt;$12&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;zebra stripes&lt;/td&gt;
-&lt;td align=&quot;center&quot;&gt;are neat&lt;/td&gt;
-&lt;td align=&quot;right&quot;&gt;$1&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-&lt;p&gt;The outer pipes (|) are optional, and you don&apos;t need to make the raw Markdown line up prettily. You can also use inline Markdown.&lt;/p&gt;
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;Markdown&lt;/th&gt;
-&lt;th&gt;Less&lt;/th&gt;
-&lt;th&gt;Pretty&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;em&gt;Still&lt;/em&gt;&lt;/td&gt;
-&lt;td&gt;&lt;code class=&quot;language-text&quot;&gt;renders&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;&lt;strong&gt;nicely&lt;/strong&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;1&lt;/td&gt;
-&lt;td&gt;2&lt;/td&gt;
-&lt;td&gt;3&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-&lt;a name=&quot;blockquotes&quot;/&gt;
-&lt;h2 id=&quot;blockquotes&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#blockquotes&quot; aria-label=&quot;blockquotes permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Blockquotes&lt;/h2&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;no-highlight&quot;&gt;&lt;pre class=&quot;language-no-highlight&quot;&gt;&lt;code class=&quot;language-no-highlight&quot;&gt;&amp;gt; Blockquotes are very handy in email to emulate reply text.
-&amp;gt; This line is part of the same quote.
-
-Quote break.
-
-&amp;gt; This is a very long line that will still be quoted properly when it wraps. Oh boy let&amp;#39;s keep writing to make sure this is long enough to actually wrap for everyone. Oh, you can *put* **Markdown** into a blockquote.&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;blockquote&gt;
-&lt;p&gt;Blockquotes are very handy in email to emulate reply text.
-This line is part of the same quote.&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;Quote break.&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;This is a very long line that will still be quoted properly when it wraps. Oh boy let&apos;s keep writing to make sure this is long enough to actually wrap for everyone. Oh, you can &lt;em&gt;put&lt;/em&gt; &lt;strong&gt;Markdown&lt;/strong&gt; into a blockquote.&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;a name=&quot;html&quot;/&gt;
-&lt;h2 id=&quot;inline-html&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#inline-html&quot; aria-label=&quot;inline html permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Inline HTML&lt;/h2&gt;
-&lt;p&gt;You can also use raw HTML in your Markdown, and it&apos;ll mostly work pretty well.&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;no-highlight&quot;&gt;&lt;pre class=&quot;language-no-highlight&quot;&gt;&lt;code class=&quot;language-no-highlight&quot;&gt;&amp;lt;dl&amp;gt;
-  &amp;lt;dt&amp;gt;Definition list&amp;lt;/dt&amp;gt;
-  &amp;lt;dd&amp;gt;Is something people use sometimes.&amp;lt;/dd&amp;gt;
-
-  &amp;lt;dt&amp;gt;Markdown in HTML&amp;lt;/dt&amp;gt;
-  &amp;lt;dd&amp;gt;Does *not* work **very** well. Use HTML &amp;lt;em&amp;gt;tags&amp;lt;/em&amp;gt;.&amp;lt;/dd&amp;gt;
-&amp;lt;/dl&amp;gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;dl&gt;
-  &lt;dt&gt;Definition list&lt;/dt&gt;
-  &lt;dd&gt;Is something people use sometimes.&lt;/dd&gt;
-  &lt;dt&gt;Markdown in HTML&lt;/dt&gt;
-  &lt;dd&gt;Does *not* work **very** well. Use HTML &lt;em&gt;tags&lt;/em&gt;.&lt;/dd&gt;
-&lt;/dl&gt;
-&lt;a name=&quot;hr&quot;/&gt;
-&lt;h2 id=&quot;horizontal-rule&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#horizontal-rule&quot; aria-label=&quot;horizontal rule permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Horizontal Rule&lt;/h2&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;Three or more...
-
----
-
-Hyphens
-
-***
-
-Asterisks
-
-___
-
-Underscores&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;Three or more...&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;Hyphens&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;Asterisks&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;Underscores&lt;/p&gt;
-&lt;a name=&quot;lines&quot;/&gt;
-&lt;h2 id=&quot;line-breaks&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#line-breaks&quot; aria-label=&quot;line breaks permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Line Breaks&lt;/h2&gt;
-&lt;p&gt;My basic recommendation for learning how line breaks work is to experiment and discover -- hit &amp;#x3C;Enter&gt; once (i.e., insert one newline), then hit it twice (i.e., insert two newlines), see what happens. You&apos;ll soon learn to get what you want. &quot;Markdown Toggle&quot; is your friend.&lt;/p&gt;
-&lt;p&gt;Here are some things to try out:&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;Here&amp;#39;s a line for us to start with.
-
-This line is separated from the one above by two newlines, so it will be a *separate paragraph*.
-
-This line is also a separate paragraph, but...
-This line is only separated by a single newline, so it&amp;#39;s a separate line in the *same paragraph*.&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;Here&apos;s a line for us to start with.&lt;/p&gt;
-&lt;p&gt;This line is separated from the one above by two newlines, so it will be a &lt;em&gt;separate paragraph&lt;/em&gt;.&lt;/p&gt;
-&lt;p&gt;This line is also begins a separate paragraph, but...
-This line is only separated by a single newline, so it&apos;s a separate line in the &lt;em&gt;same paragraph&lt;/em&gt;.&lt;/p&gt;
-&lt;p&gt;(Technical note: &lt;em&gt;Markdown Here&lt;/em&gt; uses GFM line breaks, so there&apos;s no need to use MD&apos;s two-space line breaks.)&lt;/p&gt;
-&lt;a name=&quot;videos&quot;/&gt;
-&lt;h2 id=&quot;youtube-videos&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#youtube-videos&quot; aria-label=&quot;youtube videos permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;YouTube Videos&lt;/h2&gt;
-&lt;p&gt;They can&apos;t be added directly but you can add an image with a link to the video like this:&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;no-highlight&quot;&gt;&lt;pre class=&quot;language-no-highlight&quot;&gt;&lt;code class=&quot;language-no-highlight&quot;&gt;&amp;lt;a href=&amp;quot;http://www.youtube.com/watch?feature=player_embedded&amp;amp;v=8AkLfYOgIrE
-&amp;quot; target=&amp;quot;_blank&amp;quot;&amp;gt;&amp;lt;img src=&amp;quot;http://img.youtube.com/vi/8AkLfYOgIrE/0.jpg&amp;quot;
-alt=&amp;quot;IMAGE ALT TEXT HERE&amp;quot; width=&amp;quot;240&amp;quot; height=&amp;quot;180&amp;quot; border=&amp;quot;10&amp;quot; /&amp;gt;&amp;lt;/a&amp;gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;Or, in pure Markdown, but losing the image sizing and border:&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;no-highlight&quot;&gt;&lt;pre class=&quot;language-no-highlight&quot;&gt;&lt;code class=&quot;language-no-highlight&quot;&gt;[![IMAGE ALT TEXT HERE](http://img.youtube.com/vi/YOUTUBE_VIDEO_ID_HERE/0.jpg)](http://www.youtube.com/watch?v=YOUTUBE_VIDEO_ID_HERE)&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content:encoded><author>mailto:taroguru@gmail.com</author></item></channel></rss>
+&lt;/ul&gt;</content:encoded><author>mailto:taroguru@gmail.com</author></item></channel></rss>
