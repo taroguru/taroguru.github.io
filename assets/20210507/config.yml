@@ -1,0 +1,8 @@
+sender: jeonghan@dau.ac.kr
+receivers:
+- jeonghan@dau.ac.kr
+- jeonghan@dau.ac.kr
+oksubject: "[OK] Oracle 연결 성공"
+okcontent: "[OK] Oracle 연결 성공"
+failsubject: "[FAILED] Oracle 연결 실패"
+failcontent: "[FAILED] Oracle 연결 실패"

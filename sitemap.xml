@@ -1,7 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:mobile="http://www.google.com/schemas/sitemap-mobile/1.0" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
+<url> <loc>https://taroguru.github.io/매니징-쿠버네티스</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://taroguru.github.io/워드프레스-httpd-php-mysql-서버-지속적인-메모리-감소-이슈</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://taroguru.github.io/kubenetes-정리</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://taroguru.github.io/리눅스-복제-준비</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://taroguru.github.io/아파치-보안-설정</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://taroguru.github.io/zabbix-api를-이용한-히스토리-정보를-csv로-뽑기</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://taroguru.github.io/전자-메일-인증-spf-dkim-dmarc</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://taroguru.github.io/kubenetes-with-v-mware-on-premise</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://taroguru.github.io/azure-fundamentals</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://taroguru.github.io/리눅스-파일-복구</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://taroguru.github.io/맥에서-asp-net-core-빌드하기</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://taroguru.github.io/ansible로-윈도우-서버-관리</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://taroguru.github.io/tomcat-업데이트-9-0-16-9-0-37</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://taroguru.github.io/ms-build와-nu-get</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://taroguru.github.io/tomcat-업데이트-9-0-16-9-0-35</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://taroguru.github.io/v-center-server-for-windows-to-v-center-server-appliance</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://taroguru.github.io/cent-os-7-원격-데스크탑-사용을-위한-vnc-server-설치</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://taroguru.github.io/글-정리</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>

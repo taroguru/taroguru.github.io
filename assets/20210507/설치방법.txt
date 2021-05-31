@@ -1,0 +1,8 @@
+1. yaml 컨버터 설치
+powershell을 관리자 모드로 연 후, "install-module powershell-yaml" 실행
+
+2. 환경설정 편집
+ - config.yml에서 설정 수정
+
+3. 태스크 스케쥴러 등록
+
